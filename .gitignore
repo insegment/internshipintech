@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comment
 tempfile.txt
 tempfile2.txt
@@ -9,3 +10,9 @@ log/*.log.[0-9]
 assets/photoshop/
 assets/videos/
 !assets/videos/tour_*.mp4
+=======
+wp-content/*
+wp-config.php
+pmadmin/*
+robots.txt
+>>>>>>> 3b73fa339d4f7075b59878efdfe87eeab5c79282
