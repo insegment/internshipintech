@@ -1,0 +1,10 @@
+wp-config.php
+wp-content/uploads/
+pmadmin/*
+.htaccess
+.idea/
+/nbproject/
+wp-config-sample.php
+
+wp-content/cache/
+wp-content/w3tc-config/
