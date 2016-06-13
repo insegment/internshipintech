@@ -44,20 +44,20 @@
 			<div class="mobile-line"></div>
 				<ul class="icons col-lg-12 col-md-12 clearfix">
 					<li class="whitepapers col-xs-6 col-md-3 col-lg-3">
-						<a href="/whitepapers.php"><i class="fa fa-file-text"></i></a>
-						<a href="/whitepapers.php"><p>Whitepapers</p></a>
+						<a href="/ovidiu-test-m1/whitepapers.php"><i class="fa fa-file-text"></i></a>
+						<a href="/ovidiu-test-m1/whitepapers.php"><p>Whitepapers</p></a>
 					</li>
 					<li class="articles col-xs-6 col-md-3 col-lg-3">
-						<a href="/articles.php"><i class="fa fa-newspaper-o"></i></a>
-						<a href="/articles.php"><p>Articles</p></a>
+						<a href="/ovidiu-test-m1/articles.php"><i class="fa fa-newspaper-o"></i></a>
+						<a href="/ovidiu-test-m1/articles.php"><p>Articles</p></a>
 					</li>
 					<li class="interviews col-xs-6 col-md-3 col-lg-3">
-						<a href="/interviews.php"><i class="fa fa-microphone"></i></a>
-						<a href="/interviews.php"><p>Interviews</p></a>
+						<a href="/ovidiu-test-m1/interviews.php"><i class="fa fa-microphone"></i></a>
+						<a href="/ovidiu-test-m1/interviews.php"><p>Interviews</p></a>
 					</li>
 					<li class="quotes-icon col-xs-6 col-md-3 col-lg-3">
-						<a href="/quotes.php"><i class="fa fa-quote-left"></i></a>
-						<a href="/quotes.php"><p>Quotes</p></a>
+						<a href="/ovidiu-test-m1/quotes.php"><i class="fa fa-quote-left"></i></a>
+						<a href="/ovidiu-test-m1/quotes.php"><p>Quotes</p></a>
 					</li>
 				</ul>
 			

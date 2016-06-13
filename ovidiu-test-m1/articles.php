@@ -39,16 +39,16 @@
 <body class="articles">
 		<div class="container">
 			<div class="col-md-6">
-				<a href="/" class="logo"><h1>Alexander Kesler</h1></a>
+				<a href="/ovidiu-test-m1/" class="logo"><h1>Alexander Kesler</h1></a>
 				<h3>ARTICLES AND MEDIA COVERAGE</h3>
 			</div>
 			<div class="col-md-6">
 				<ul class="menu clearfix">
-					<li class="col-xs-12"><a class="hvr-float-shadow" href="/whitepapers.php">Whitepapers</a></li>
-					<li class="col-xs-12"><a class="hvr-float-shadow active" href="/articles.php">Articles</a></li>
-					<li class="col-xs-12"><a class="hvr-float-shadow" href="/interviews.php">Interviews</a></li>
-					<li class="col-xs-12"><a class="hvr-float-shadow" href="/awards.php">Awards</a></li>
-					<li class="col-xs-12"><a class="hvr-float-shadow" href="/quotes.php">Quotes</a></li>
+					<li class="col-xs-12"><a class="hvr-float-shadow" href="/ovidiu-test-m1//whitepapers.php">Whitepapers</a></li>
+					<li class="col-xs-12"><a class="hvr-float-shadow active" href="/ovidiu-test-m1//articles.php">Articles</a></li>
+					<li class="col-xs-12"><a class="hvr-float-shadow" href="/ovidiu-test-m1//interviews.php">Interviews</a></li>
+					<li class="col-xs-12"><a class="hvr-float-shadow" href="/ovidiu-test-m1//awards.php">Awards</a></li>
+					<li class="col-xs-12"><a class="hvr-float-shadow" href="/ovidiu-test-m1//quotes.php">Quotes</a></li>
 				</ul>
 			</div>
 

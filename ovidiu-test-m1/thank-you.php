@@ -35,19 +35,19 @@
 			<div class="mobile-line"></div>
 				<ul class="icons col-lg-12 col-md-12 clearfix">
 					<li class="whitepapers col-xs-6 col-md-3 col-lg-3">
-						<a href="/whitepapers.html"><i class="fa fa-file-text"></i></a>
-						<a href="/whitepapers.html"><p>Whitepapers</p></a>
+						<a href="/ovidiu-test-m1/whitepapers.html"><i class="fa fa-file-text"></i></a>
+						<a href="/ovidiu-test-m1/whitepapers.html"><p>Whitepapers</p></a>
 					</li>
 					<li class="articles col-xs-6 col-md-3 col-lg-3">
-						<a href="/articles.html"><i class="fa fa-newspaper-o"></i></a>
+						<a href="/ovidiu-test-m1/articles.html"><i class="fa fa-newspaper-o"></i></a>
 						<a href="#"><p>Articles</p></a>
 					</li>
 					<li class="interviews col-xs-6 col-md-3 col-lg-3">
-						<a href="/interviews.html"><i class="fa fa-microphone"></i></a>
-						<a href="/interviews.html"><p>Interviews</p></a>
+						<a href="/ovidiu-test-m1/interviews.html"><i class="fa fa-microphone"></i></a>
+						<a href="/ovidiu-test-m1/interviews.html"><p>Interviews</p></a>
 					</li>
 					<li class="quotes-icon col-xs-6 col-md-3 col-lg-3">
-						<a href="/quotes.html"><i class="fa fa-quote-left"></i></a>
+						<a href="/ovidiu-test-m1/quotes.html"><i class="fa fa-quote-left"></i></a>
 						<a href="#"><p>Quotes</p></a>
 					</li>
 				</ul>
