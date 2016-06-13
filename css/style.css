@@ -1,21 +1,14 @@
 body{
-	margin:0;
+	width: 600px;
+	margin: 20px auto;
 }
 
-.container{
-	width: 800px;
-	height: 1000px;
-	margin:auto;
-	background: #e3e3e3;
+article img{
+	float:left;
+	margin-right: 25px;
+}
+
+.preview{
 	position: relative;
-}
-
-.box{
-	width: 400px;
-	height: 400px;
-	background: red;
-	margin:auto;
-	position: absolute;
-	left: 20px;
-	top: 30px;
+	float:right;
 }
