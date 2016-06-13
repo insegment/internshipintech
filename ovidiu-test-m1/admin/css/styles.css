@@ -1,0 +1,15 @@
+.logo img {
+  margin-top: 10px;
+}
+
+#map-canvas {
+  height: 250px;
+}
+
+#map-canvas img {
+  max-width: none!important;
+}
+
+.box.visitor-info {
+  overflow: hidden;
+}
