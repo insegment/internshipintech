@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text">Cel mai șmecher  Titlu</h1>
+					<h1 class="titlul paginii screen-reader-text">Cel mai șmecher  Titlu</h1>
 				</header>
 			<?php endif; ?>
 
