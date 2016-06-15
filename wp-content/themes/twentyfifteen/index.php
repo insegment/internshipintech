@@ -19,9 +19,10 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
+				<div id="header">
 					<h1 class="titlul paginii screen-reader-text">Cel mai șmecher  Titlu</h1>
-				</header>
+				</div>
+				<span class="fa fa-danger"></span>
 			<?php endif; ?>
 
 			<?php
