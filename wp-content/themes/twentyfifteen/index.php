@@ -23,19 +23,17 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-			<a href="#">Link to nowhere</a>
-			<a href="#">Link to nowhere</a>
 	<div class="loop">
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
-				get_template_part( 'content', 'post' );
-
+				get_template_part( 'content', get_post_format() );
+			//End the loop
 			endwhile;
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous', 'twentyfifteen' ),
-				'next_text'          => __( 'Next', 'twentyfifteen' ),
+				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+				'next_text'          => __( 'Next page', 'twentyfifteen' ),
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
 			) );
 		// If no content, include the "No posts found" template.
@@ -45,6 +43,7 @@ get_header(); ?>
 		endif;
 		?>
 	</div>
+
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
