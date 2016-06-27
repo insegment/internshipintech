@@ -51,8 +51,8 @@ body{
 /*FIRST SECTION*/
 #head{
 	background: url(../img/Title.jpg) no-repeat center;
-	padding-top: 100px;
-    padding-bottom: 100px;
+ 	padding-top: 150px;
+    padding-bottom: 150px;
 	background-position: center top;
 	background-size: 100%;
 }
@@ -72,10 +72,11 @@ body{
 }
 
 .header h1:nth-child(2){
+	font-weight: 400;
 	font-family: 'CodeProLight';
 	margin-top: 0;
     padding: 0px 215px;
-	font-size: 80px;
+	font-size: 105px;
 	margin-bottom: 0;
 	color: #ffffff;
 }
@@ -84,7 +85,7 @@ body{
 	font-family: OpenSans;
 	margin:auto;
     padding: 0px 255px;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 /*FORM SECTION*/
@@ -115,10 +116,11 @@ body{
 	width:250px;
 	background: transparent;
     border-radius: 0 10px;
+	outline: none;
 }
 
 #form_text h2{
-	font-family: CodePro-LC
+	font-family: CodePro-LC;
 	padding-top: 30px;
 	margin-top: 0;
 }
@@ -139,6 +141,9 @@ body{
 	font-weight: bold;
 }
 
+#form_button:hover{
+	background: rgba(37, 37, 37, 0.52);
+}
 /*NAVIGATION BAR SECTION*/
 #navbar{
 	background: #545459;
@@ -213,9 +218,13 @@ body{
 	float: left;
 }
 
+.box h1{
+	font-family: OpenSans;
+}
+
 .box p{
 	font-family: OpenSans;
-	padding: 0px 200px;
+	padding: 0px 100px;
 	color: #ffffff;
 }
 
@@ -279,5 +288,10 @@ body{
 #f-text ul li a{
 	font-family: OpenSans;
 	text-decoration: none;
+	color: #ffffff;
+}
+
+#f-text ul li a:hover{
+	text-decoration: underline;
 	color: #ffffff;
 }
