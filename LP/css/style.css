@@ -1,18 +1,43 @@
 /*CUSTOM FONTS*/
 @font-face {
-    font-family: 'CPLight'; /*a name to be used later*/
-    src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Light-LC.otf'); /*URL to font*/
+    font-family: 'CodeProLight'; /*a name to be used later*/
+    src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Light.otf'); /*URL to font*/
 }
+
 @font-face{
-	font-family: 'CPBold';
+	font-family: 'CodePro';
+    src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro.otf');
+}
+
+@font-face{
+	font-family: 'CodePro';
+    src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face{
+	font-family: 'CodePro-LC';
+    src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro-LC.otf');
+}
+
+@font-face{
+	font-family: 'CodePro-LC';
     src: url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Bold-LC.otf');
+    font-weight: bold;
 }
 
 @font-face{
     font-family: 'OpenSans';
-    src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
 }
 
+@font-face{
+    font-family: 'OpenSans';
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+    font-weight: bold;
+}
+
+/*OTHER*/
 body{
 	margin: 0;
 }
@@ -39,7 +64,7 @@ body{
 }
  
 .header h1:first-child{
-	font-family: 'CPBold';
+	font-family: 'CodePro';
 	color: #97D700;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -47,7 +72,7 @@ body{
 }
 
 .header h1:nth-child(2){
-	font-family: 'CPLight';
+	font-family: 'CodeProLight';
 	margin-top: 0;
     padding: 0px 215px;
 	font-size: 80px;
@@ -81,16 +106,20 @@ body{
 }
 
 .form_content input{
+	font-family: CodePro;
+	padding-left: 10px;
+	font-size: 15px;
 	margin-top:10px;
 	margin-right:30px;
-	height: 45px;
+	height: 40px;
 	width:250px;
 	background: transparent;
     border-radius: 0 10px;
-    text-align: center;
 }
 
 #form_text h2{
+	font-family: CodePro-LC
+	padding-top: 30px;
 	margin-top: 0;
 }
 
@@ -99,15 +128,24 @@ body{
 	width:300px;
 }
 
+.form_left p{
+	font-family: OpenSans;
+}
+
 #form_button{
+	cursor: pointer;
 	background:#252525;
 	color: #a3d22c;
-	font-family: 'CPBold';
+	font-weight: bold;
 }
 
 /*NAVIGATION BAR SECTION*/
 #navbar{
 	background: #545459;
+}
+
+.menu{
+	margin: 0 200px;+
 }
 
 .menu ul{
@@ -119,28 +157,37 @@ body{
 }
 
 .menu li{
-float:left;
+	float:left;
+	border-left: 1px solid;
+	border-color: #78797d;
 }
 
+.menu li:nth-last-child(1)
+{
+	border-right: 1px solid;
+	border-color: #78797d;
+}
 .menu li a{
+	font-family: CodePro-LC;
+	line-height: 28px;
+	width: 100px;
+    height: 30px;
 	display: block;
 	color: #97D700;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 20px 75px;
 	text-decoration: none;
 }
 
 .menu a:hover:not(.active){
-	background-color: #97D700;
+	background: url(../img/button.jpg) repeat-x;
 	color: #000000;
 }
 
 .menu li a.active {
-    background-color: #97D700;
+    background: url(../img/button.jpg) repeat-x;
     color: #000000;
 }
-
-
 
 /*THIRD SECTION*/
 #textbar{
@@ -148,32 +195,71 @@ float:left;
 }
 
 .text{
+	font-family: OpenSans;
     padding: 50px;
-    color: white;
+    color: #ffffff;
 	text-align: center;
 }
 
 .text h1{
+	font-family: CodePro;
 	margin-top: 0;
 }
+/*BOX SECTION*/
+.box{
+	padding-top: 35px;
+	width: 50%;
+	height: 350px;
+	float: left;
+}
+
+.box p{
+	font-family: OpenSans;
+	padding: 0px 200px;
+	color: #ffffff;
+}
+
+.box:first-child{
+	background: url(../img/box1.jpg)no-repeat center;
+	text-align: center;
+}
+
+.box:nth-child(2){
+	background: url(../img/box2.jpg)no-repeat center;
+	text-align: center;
+}
+
+.box:nth-child(3){
+	background: url(../img/box3.jpg)no-repeat center;
+	text-align: center;
+}
+
+.box:nth-child(4){
+	background: url(../img/box4.jpg)no-repeat center;
+	text-align: center;
+}
+
 
 /*FOOTER*/
 .footer{
-	background: url('../img/footer.jpg');
+	background: url('../img/footer.jpg')no-repeat center;
+	clear: both;
 }
 
 #f-text{
+    padding: 40px 0;	
 	text-align: center;
 }
 
 #f-text h1{
+	font-family: CodePro;
 	margin-top:0;
 	color: #97D700;
 }
 
 #f-text ul{
 	list-style: none;
-    color: white;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -188,4 +274,10 @@ float:left;
 
 #f-text ul li:nth-child(2){
 	padding-left: 30px;
+}
+
+#f-text ul li a{
+	font-family: OpenSans;
+	text-decoration: none;
+	color: #ffffff;
 }
