@@ -65,13 +65,14 @@ body{
  
 .header h1:first-child{
 	font-family: 'CodePro';
-	color: #97D700;
+	color: #a3d22c;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 20px;
 }
 
 .header h1:nth-child(2){
+	line-height: 90%;
 	font-weight: 400;
 	font-family: 'CodeProLight';
 	margin-top: 0;
@@ -94,6 +95,7 @@ body{
 }
 
 .form {
+	padding-bottom: 20px;
 	overflow: auto;
 	margin: 0 150px;
 }
@@ -122,7 +124,15 @@ body{
 #form_text h2{
 	font-family: CodePro-LC;
 	padding-top: 30px;
-	margin-top: 0;
+	margin: 0 0 10px;
+}
+
+#form_text p:nth-child(2){
+	margin: 0;
+}
+
+#form_text p:nth-child(3){
+	    margin: 0 0 20px;
 }
 
 .form_left{
@@ -201,30 +211,37 @@ body{
 
 .text{
 	font-family: OpenSans;
-    padding: 50px;
+	margin: 0 70px 0 70px;
+    padding: 20px 50px 20px 50px;
     color: #ffffff;
 	text-align: center;
 }
 
 .text h1{
 	font-family: CodePro;
-	margin-top: 0;
+    margin: 0;
+}
+
+.text p{
+	margin: 0;
 }
 /*BOX SECTION*/
 .box{
 	padding-top: 35px;
 	width: 50%;
-	height: 350px;
+    height: 400px;
 	float: left;
 }
 
 .box h1{
 	font-family: OpenSans;
+	margin-bottom: 0;
 }
 
 .box p{
+	margin: 0 17%;
 	font-family: OpenSans;
-	padding: 0px 100px;
+	padding: 0 10%;
 	color: #ffffff;
 }
 
