@@ -109,6 +109,8 @@ body{
 
 .form img{
 	float: left;
+	width: 215px;
+    height: auto;
 }
 
 .form_content{
@@ -242,9 +244,11 @@ body{
 	float: left;
 }
 
-.box h1{
-	font-family: OpenSans;
+.box p:first-child{
+	font-family: OpenSans-Light;
 	margin-bottom: 0;
+	color: #000000;
+	font-size: 24px;
 }
 
 .box p{
