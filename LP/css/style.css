@@ -1,4 +1,4 @@
-@font-face{font-family:'CodeProLight';src:url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Light.otf');}
+@font-face{font-family:'CodeProLight';src:url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Light.otf');font-weight: lighter;}
 @font-face{font-family:'CodePro';src:url('../fonts/Code Pro Family/Fontfabric - Code-Pro.otf');}
 @font-face{font-family:'CodePro';src:url('../fonts/Code Pro Family/Fontfabric - Code-Pro-Bold.otf');font-weight:bold;}
 @font-face{font-family:'CodePro-LC';src:url('../fonts/Code Pro Family/Fontfabric - Code-Pro-LC.otf');}
