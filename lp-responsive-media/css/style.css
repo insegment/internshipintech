@@ -1,0 +1,146 @@
+body{
+	margin:0;
+}
+
+.container{
+	width: 1170px;
+	margin: auto;
+}
+
+.header{
+	background: url('../img/headerbg.jpg');
+    height: 110px;
+}
+
+.header img{
+	margin-top: 25px;
+}
+
+#phone_number{
+	float: right;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#header_button{
+	float: right;
+	clear: both;
+	width: 217px;
+	height: 43px;
+	border-radius: 10px;
+	background: #83bd30;
+	cursor: pointer;
+	border: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#header_button img{
+	color: #ffffff;
+}
+
+.navbar{
+	background: url('../img/navbg.jpg');
+	height: 46px;
+}
+
+.menu{
+    padding: 13px 0;
+}
+
+.menu ul{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li{
+	float: left;
+	border-left: 1px solid;
+    border-color: #ffffff;
+}
+
+.menu ul li:first-child{
+	border-left: 0;
+}
+
+.menu ul li a{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 18px;
+    margin: 0 20px;
+}
+
+#firstnavelem{
+	margin-left: 0;
+}
+
+.menu ul li a.active{
+	color: #afed44;
+}
+
+.menu ul li a:hover:not(.active){
+	color: #afed44;
+}
+
+.whitepaper{
+	background: url('../img/whitepaper_bg.jpg');
+    height: 500px;
+}
+
+.textwp{
+	width: 700px;
+    float: left;
+}
+
+.textwp h1{
+	margin: 0;
+	padding-top: 35px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 45px;
+	width: 600px;
+	color: #ffffff;
+}
+
+.textwp h1 span{
+	color: #afed44;
+}
+
+.textwp p{
+	float: left;
+    width: 700px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+#wpbook{
+    padding-top: 60px;	
+}
+
+#wp_button{
+	float: right;
+	width: 254px;
+	height: 60px;
+	border-radius: 10px;
+	background: #83bd30;
+	cursor: pointer;
+	border: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 0 105px 0 0;
+}
