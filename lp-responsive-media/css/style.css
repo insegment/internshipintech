@@ -3,16 +3,19 @@ body{
 }
 
 .container{
-	width: 1170px;
-	margin: auto;
-}
+	max-width: 1180px;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}	
 
 .header{
-	background: url('../img/headerbg.jpg');
-    height: 110px;
+	background: #374043;
+    text-align: center;
 }
 
-.header img{
+.heading img{
 	margin-top: 25px;
 }
 
@@ -29,13 +32,12 @@ body{
 #header_button{
 	float: right;
 	clear: both;
-	width: 217px;
-	height: 43px;
+	height: auto;
 	border-radius: 10px;
 	background: #83bd30;
 	cursor: pointer;
 	border: 0;
-    padding: 0;
+    padding: 10px;
     color: #ffffff;
     font-size: 13px;
     margin-top: 10px;
@@ -47,10 +49,20 @@ body{
 	color: #ffffff;
 }
 
+.logo{
+	float: left;
+}
+
+.numbutton{
+	float: right;
+	padding: 0 25px;
+}
+
 .navbar{
 	background: url('../img/navbg.jpg');
-	height: 46px;
+	text-align: center;
 }
+
 
 .menu{
     padding: 13px 0;
@@ -95,7 +107,7 @@ body{
 
 .whitepaper{
 	background: url('../img/whitepaper_bg.jpg');
-    height: 500px;
+    text-align: center;
 }
 
 .textwp{
@@ -109,8 +121,8 @@ body{
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 45px;
-	width: 600px;
 	color: #ffffff;
+	text-align: initial;
 }
 
 .textwp h1 span{
@@ -119,28 +131,604 @@ body{
 
 .textwp p{
 	float: left;
-    width: 700px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #ffffff;
+    font-size: 17px;
+    text-align: initial;
 }
 
 #wpbook{
-    padding-top: 60px;	
+    padding-top: 60px;
+    float: right;
+}
+
+#wpbook2{
+	display: none;
 }
 
 #wp_button{
 	float: right;
-	width: 254px;
-	height: 60px;
+	padding: 10px;
 	border-radius: 10px;
 	background: #83bd30;
 	cursor: pointer;
 	border: 0;
-    padding: 0;
     color: #ffffff;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin: 0 105px 0 0;
+    margin-bottom: 35px;
+}
+
+#mob_button{
+	padding: 10px;
+	border-radius: 10px;
+	background: #2889ce;
+	cursor: pointer;
+	border: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    float: right;
+    margin: 10px 0;
+}
+
+
+#mob_button2{
+	padding: 10px;
+	border-radius: 10px;
+	background: #83bd30;
+	cursor: pointer;
+	border: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin: 10px 0;
+}
+
+#wp_button:before{
+	content: '\f019';
+	font-family: FontAwesome;
+	font-size: 15px;
+}
+
+.mobilebuttons{
+	background: #2a3133;
+	display: none;
+}
+
+#phone_number2{
+	display: none;
+}
+
+.arbor{
+	background: #ffffff;
+	text-align: center;
+}
+
+.whitepapertext{
+	display: none;
+}
+
+.warbor{
+	text-align: initial;
+}
+
+.warbor h2{
+	color: #94bb00;
+}
+
+.warbor h3{
+	color: #94bb00;
+}
+
+.head2 h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	margin: 35px 0;
+}
+
+.posts{
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.posts h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+
+.left{
+    width: 40%;
+    float: left;
+}
+
+.right{
+    width: 40%;
+    float: right;
+}
+
+.right a{
+    color: #94bb00;
+}
+
+.awards{
+	background: url('../img/greysection.jpg');
+	text-align: center;
+}
+
+.awardsboxcon{
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.awardsbox{
+	background: #ffffff;
+	width: 23%;
+	height: 150px;
+	float: left;
+	margin: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.awardsh{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	text-align: initial;
+}
+
+.awardsh h3{
+	margin: 50px 0;
+}
+
+.industry{
+	background: url('../img/industry_bg.jpg');
+	text-align: center;
+	color: #ffffff;
+}
+
+.industryh{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	padding: 0 4%;
+	text-align: initial;
+}
+
+.industryh h3{
+	margin: 4% 0;
+}
+
+.testiw{
+	display: inline-block;
+	width: 100%;
+}
+
+.testimonial{
+	float: left;
+    width: 25%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: initial;
+    font-size: 15px;
+	padding: 0 4%;
+}
+
+.testimonial:nth-child(2){
+	border-right: 1px solid;
+	border-left: 1px solid;
+}
+
+.svideo{
+	text-align: center;
+	background: #ffffff;
+}
+
+.headerv{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin: 30px 0 50px 0;
+}
+
+.headerv h3{
+	margin: 0;
+	font-size: 50px;
+	text-align: initial;
+}
+
+.convideo{
+	display: inline-block;
+}
+
+.video{
+	float: left;
+}
+
+#firstvid{
+	padding-right: 100px;
+}
+
+.footer{
+	background: #292929;
+	text-align: center;
+	color: #ffffff;
+}
+
+.wfooter{
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding: 2% 0;
+}
+
+.flogo{
+	padding: 20px 2% 0 0;
+	float: left;
+	width: 10%;
+}
+
+.flogo img{
+	max-width: 100%;
+}
+
+.copyright{
+	float: left;
+	display: inline-block;
+}
+
+.copyright p{
+	padding-top: 25px;
+	margin: 0;
+}
+
+.termspolicy{
+	display: inline-block;
+	float: left;
+	padding-top: 25px;
+}
+
+.termspolicy ul{
+	margin: 0;
+}
+
+.termspolicy ul li{
+	list-style: none;
+	display: inline;
+	border-right: 2px solid;
+	padding: 0 10px;
+}
+
+.termspolicy ul li:last-child{
+	border-right: 0;
+}
+
+.termspolicy ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.termspolicy ul li a:hover{
+	text-decoration: underline;
+}
+
+.social{
+	display: inline-block;
+	float: right;
+	padding-top: 20px;
+}
+
+.social ul{
+	margin: 0;
+}
+
+.social ul li{
+	list-style:none;
+	display: inline;
+	font-size: 25px;
+	padding: 0 10px;
+}
+
+.social ul li a{
+	color: #94bb00;
+}
+
+.msocial{
+	display: none;
+}
+
+.msocial ul li{
+	list-style:none;
+	display: inline;
+	font-size: 25px;
+	padding: 0 10px;
+}
+
+.msocial ul li a{
+	color: #94bb00;
+}
+
+@media screen and (max-width: 1199px){
+
+	.textwp{
+		width: 55%;
+	}
+	
+	.menu ul li a{
+	    font-size: 17px;	
+	}
+
+	.whitepaper{
+		height: auto;
+		background-repeat: round;
+	}
+
+	#wpbook {
+    	height: auto;
+	}
+}
+
+@media screen and (max-width: 984px){
+	.menu ul li a{
+		font-size: 12px;
+	}
+
+	.bookbutton{
+		display: inline-block;
+	}
+
+	#wpbook {
+		float: left;
+	}
+
+	#wp_button{
+		float: left;
+		clear: both;
+	}
+
+	.textwp{
+		width: 100%;
+	}
+
+	#wpbook{
+		display: none;
+	}
+
+	#wpbook2{
+		display: initial;
+	}
+
+	.convideo{
+		padding: 0 25%;
+	}
+}
+
+#downloadlogo{
+	display: none;
+}
+
+@media screen and (max-width: 771px){
+	.menu ul li a{
+		font-size: 11px;
+	}
+
+	.bookbutton{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	#downloadlogo{
+		display: initial;
+		color: #ffffff;
+	    float: right;
+	    font-size: 30px;
+	    padding-top: 10px;
+	}
+
+	.heading img{
+		margin-top: 0;
+		width: 111px;
+		height: auto;
+	}
+
+	.numbutton{
+		display: none;
+	}
+
+	.navbar{
+		display: none;
+	}
+
+	.textwp p{
+		display: none;
+	}
+
+	#wpbookdiv{
+		display: none;
+	}
+
+	#wp_button{
+		background: #2889ce;
+		float: none;
+		display: none;
+	}
+
+	.mobilebuttons{
+		display: block;
+		background: #2a3133;
+	}
+
+	#phone_number2{
+		display: block;
+		float: left;
+		text-decoration: none;
+		color: #89bb3a;
+		font-size: 20px;
+		margin-top: 20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+	}
+
+	.textwp h1{
+		font-size: 18px;
+		margin: 0;
+		text-align: center;
+		clear: both;
+		padding-top: 15px;
+	}
+
+	.logo{
+		padding-top: 10px;
+	}
+
+	.whitepapertext{
+		display: inline-block;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		padding: 0 10px;
+	}
+
+	.whitepapertext a{
+		font-size: 14px;
+		font-weight: 600;
+		color: #94bb00;
+	}
+
+	.arbor .container{
+		padding: 0;
+	}
+
+	.head2 h2{
+		font-size: 25px;
+		padding: 0 10px;
+	}
+
+	.posts{
+		display: block;
+	}
+
+	.posts h3{
+		font-size: 12px;
+	}
+
+	.posts p{
+		display: none;
+	}
+
+	.posts a{
+		display: none;
+	}
+
+	#mobsarbor{
+		background: #f3f3f3;
+		width: 100%;
+		float: none;
+		padding-left: 10px;
+		height: 45px;
+		box-sizing: border-box;
+		line-height: 50px;
+	}
+
+	#mobsarbor h3:after{
+		content: '\f0d7';
+		font-family: 'FontAwesome';
+		font-size: 30px;
+		background: #9cc026;
+		float: right;
+		height: 45px;
+		width: 8%;
+		text-align: center;
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	.awardsh h3{
+		background: #ffffff;
+		margin: 0;
+	}
+
+	.awardsbox{
+		width: 44%;
+		margin: 3%;
+	}
+
+	.testimonial{
+		float: none;
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.testimonial:nth-child(2){
+		border-right: 0;
+		border-left: 0;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+	}
+
+	.headerv h3{
+		font-size: 25px;
+	}
+
+	.convideo{
+		width: 65%;
+		padding: 0;
+	}
+
+	.video{
+		padding: 0;
+	}
+
+	#youtube{
+		width: 100%;
+		height: 155px;
+	}
+
+	#firstvid {
+    	padding-right: 0px;
+	}
+
+	.social{
+		display: none;
+	}
+
+	.flogo{
+		width: 20%;
+	}
+
+	.msocial{
+		display: inline-block;
+		float: right;
+		padding-top: 20px;
+	}
+
+	.msocial ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	.copyright{
+		clear: both;
+	}
+
+	.copyright p{
+		padding-top: 15px;
+	}
+
+	.termspolicy{
+		padding: 0;
+	}
+
+	.termspolicy ul{
+		padding: 0;
+	}
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -10,11 +11,16 @@
 <body>
 	<section class="header">
 		<div class="container">
-			<header>
-				<a href="#"><img src="img/Arbor_Logo.png"></a>
-				<a id="phone_number" href="tel:555-555-5555">555-555-5555</a>
-				<input id=header_button type=submit value="ARE YOU UNDER ATTACK?">
-			</header>
+			<div class="heading">
+				<div class="logo">
+					<a href="#"><img src="img/Arbor_Logo.png"></a>
+				</div>
+				<i class="fa fa-bars" id="downloadlogo" aria-hidden="true"></i>
+				<div class="numbutton">
+					<a id="phone_number" href="tel:555-555-5555">555-555-5555</a>
+					<input id=header_button type=submit value="ARE YOU UNDER ATTACK?">
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="navbar">
@@ -33,12 +39,164 @@
 	<section class="whitepaper">
 		<div class="container">
 			<div class="textwp">
+				<a id="phone_number2" href="tel:555-555-5555">555-555-5555</a>
 				<h1>SECURITY STARTS WITH <span>NETWORK VISIBILITY</span></h1>
 				<p>Despite years of investment in multiple layers of security defenses, organizations are still wide open to targeted attacks. It is practically impossible to stop all attacks without proper network and visibility and security intelligence. Even Next Generation Firewalls, complete alerting and logs collected in a SIEM, universal patch management and vulnerability discovery have proven to be ineffective against threat actors who are motivated, skilled and determined.</p>
 				<p>Arbor’s solution focuses on network traffic monitoring, offering complete and immediate network visibility to all communications, theft and lateral movement. By focusing on network traffic monitoring, you can gain network intelligence on the broadest array of systems, which are the ultimate targets.</p>
 			</div>
-				<img id="wpbook" src="img/wpbook.png">
-				<button id=wp_button type=submit><img src="img/downloadico.png"> DOWNLOAD WHITEPAPER</button>
+		    <div class="bookbutton">
+		    	<div id="wpbookdiv">
+					<img id="wpbook" src="img/wpbook.png">
+					<img id="wpbook2" src="img/wpbook_mobile.jpg">
+				</div>
+				<div class="wpbuttons">
+					<button id="wp_button" type=submit> DOWNLOAD WHITEPAPER</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mobilebuttons">
+		<div class="container">
+			<button id="mob_button2" type=submit>ARE YOU UNDER ATTACK?</button>
+			<button id="mob_button" type=submit> DOWNLOAD WHITEPAPER</button>
+		</div>
+	</section>
+	<section class="arbor">
+		<div class="container">
+			<div class="warbor">
+				<div class="whitepapertext">
+					<p>Despite years of investment in multiple layers of security defenses, organizations are still wide open to targeted attacks. It is practically impossible to stop all attacks without proper network and visibility and security intelligence. Even Next Generation Firewalls, complete alerting and logs collected in a SIEM, universal patch management and vulnerability discovery have proven to be ineffective against threat actors who are motivated, skilled and determined.</p>
+					<a href="http://www.intechdynamics.com">READ MORE</a>
+				</div>
+				<div class="head2">
+					<h2>WHY CHOOSE ARBOR?</h2>
+				</div>
+				<div class="posts">
+					<div class="left" id="mobsarbor">
+						<h3><i class="fa fa-dot-circle-o" aria-hidden="true"></i> FOCUS ON THE NETWORK TRAFFIC MONITORING</h3>
+						<p>Arbor’s does not focus on specific threats or points of attack, but on networks themselves. No matter how much the threats and attackers have changed, security still comes down to consistent network traffic monitoring and complete network visibility.  Arbor provides your organization with the network intelligence it needs to identify, understand and stop external and internal threats to your business.</p>
+					</div>
+					<div class="right" id="mobsarbor">
+						<h3><i class="fa fa-eye" aria-hidden="true"></i> NETWORK VISIBILITY WITH NETFLOW</h3>
+						<p>Arbor Networks NSI sits inside the network and collects network intelligence via IP flow data (e.g., NetFlow, sFlow, etc.), delivering pervasive and cost-effective application and network 	visibility. As NSI gathers this information, it learns normal traffic and routing behavior across hundreds of routers and thousands of interfaces, and correlates network visibility with topology data to build logical data models. Armed with this information, NSI notifies network operations staff of significant changes to the network (a.k.a. network anomalies) due to misconfiguration, equipment failure or a DDoS attack.</p>
+					</div>
+					<div class="left" id="mobsarbor">
+						<h3><i class="fa fa-desktop" aria-hidden="true"></i> DEEP INSIGHT WITH FULL PACKET CAPTURE</h3>
+						<p>Arbor Networks SA solution gives organizations an unprecedented and detailed view of attacks in any captured network traffic, allowing users to analyze data at the speed of their thoughts versus waiting for long queries. Powerful visualizations display network intelligence from multiple perspectives (attacker, target, location or attack type)—enabling analysts to quickly assess the security posture of the organization. Once an indicator of compromise has been identified, SA provides the analyst with actionable network intelligence, allowing confirmation of the details and extent of the attack.</p>
+					</div>
+					<div class="right" id="mobsarbor">
+						<h3><i class="fa fa-globe" aria-hidden="true"></i> GLOBAL NETWORK INTELLIGENCE WITH ATLAS</h3>
+						<p>What separates Arbor from other security vendors is how we leverage our service provider footprint to benefit enterprise customers. Arbor created ATLAS, a collaborative project with more than 330+ service providers who have agreed to share anonymous network intelligence data totaling an unprecedented 120Tbps.</p>
+						<a href="http://www.intechdynamics.com/">READ MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="awards">
+		<div class="container">
+			<div class="awardsh">
+				<h3>AWARDS</h3>
+			</div>
+			<div class="awardsboxcon">
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards1.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards2.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards3.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards4.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards5.png">
+				</div>
+				<div class="awardsbox">                   
+					<img class="awardslogo" src="img/awards6.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards7.png">
+				</div>
+				<div class="awardsbox">
+					<img class="awardslogo" src="img/awards8.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="industry">
+		<div class="container">
+			<div class="industryw">
+				<div class="industryh">
+					<h3>INDUSTRY TESTIMONIALS</h3>
+				</div>
+				<div class="testiw">
+					<div class="testimonial">
+						<p><i>“Arbor Networks knows more about the internet’s workings than 	possibly anyone outside the National Security Agency. Their monitoring 	equipment sits in nearly all Tier 1 internet providers — and if you 	want data on what the internet looks like and what the top threats are, 	they’ve got it through their ATLAS service.”</i><br><br><b>WIRED</b></p>
+					</div>
+					<div class="testimonial">
+						<p><i>“Arbor now has a unique combination of NetFlow, packet capture 	and global threat intelligence from their ATLAS infrastructure to 	address today's dynamic threats that evade signature-based solutions.</i><br><br><b>IDC</b></p>
+					</div>
+					<div class="testimonial">
+						<p><i>“Arbor Networks has broken new ground in security analytics 	functionality. The ability to replay captured traffic (looping) through 	an updated engine provides retroactive forensics that takes advantage 	of new intelligence as it becomes available. That, and the enhanced 	graphical data mining capability sets Arbor’s SA solution apart.”</i><br><br>Noted industry analyst and author<br><br><b>Richard Steinnon.</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="svideo">
+		<div class="container">
+			<div class="conheadvid">
+				<div class="headerv">
+					<h3>LEARN MORE ABOUT DDoS PROTECTION</h3>
+				</div>
+				<div class="convideo">
+					<div class="video" id="firstvid">
+						<iframe width="520" height="300" src="https://www.youtube.com/embed/uhscMsBhNhw" frameborder="0" allowfullscreen id="youtube"></iframe>
+					</div>
+					<div class="video">
+						<iframe width="520" height="300" src="https://www.youtube.com/embed/CT8t_1JXWn8" frameborder="0" allowfullscreen id="youtube"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="wfooter">
+				<div class="flogo">
+					<a href="#"><img src="img/Arbor_Logo.png"></a>
+				</div>
+				<div class="msocial">
+					<ul>
+						<li><a href="https://www.rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<p>&copy; Copyright 2015 Arbor Networks, Inc. All rights reserved.</p>
+				</div>
+				<div class="termspolicy">
+					<ul>
+						<li><a href="http://www.intechdynamics.com">Terms of Service</a></li>
+						<li><a href="http://www.intechdynamics.com">Policy</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<ul>
+						<li><a href="https://www.rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 </body>
