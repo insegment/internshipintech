@@ -29,6 +29,10 @@ body{
 	font-weight: bold;
 }
 
+#phone_number:hover{
+	color: #83bd30;
+}
+
 #header_button{
 	float: right;
 	clear: both;
@@ -43,6 +47,11 @@ body{
     margin-top: 10px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    outline: none;
+}
+
+#header_button:hover{
+	background: #8dce31;
 }
 
 #header_button img{
@@ -159,6 +168,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin-bottom: 35px;
+    outline: none;
+}
+
+#wp_button:hover{
+	background: #8dce31;
 }
 
 #mob_button{
@@ -245,18 +259,22 @@ body{
 }
 
 .left{
-    width: 40%;
+    width: 45%;
     float: left;
 }
 
 .right{
-    width: 40%;
+    width: 45%;
     float: right;
 }
 
 .right a{
     color: #94bb00;
 }
+
+#mobsarbor .fa {
+    	font-size: 25px;
+	}
 
 .awards{
 	background: url('../img/greysection.jpg');
@@ -357,6 +375,10 @@ body{
 	padding-right: 100px;
 }
 
+#youtube{
+
+	}
+
 .footer{
 	background: #292929;
 	text-align: center;
@@ -441,6 +463,10 @@ body{
 	color: #94bb00;
 }
 
+.social ul li a:hover{
+	color: #caff00;
+}
+
 .msocial{
 	display: none;
 }
@@ -507,12 +533,13 @@ body{
 	}
 
 	.convideo{
-		padding: 0 25%;
+		padding-right: 25%;
 	}
 }
 
 #downloadlogo{
 	display: none;
+
 }
 
 @media screen and (max-width: 771px){
@@ -655,6 +682,7 @@ body{
 	.awardsh h3{
 		background: #ffffff;
 		margin: 0;
+		text-align: center;
 	}
 
 	.awardsbox{
