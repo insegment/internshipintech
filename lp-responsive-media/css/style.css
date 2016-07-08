@@ -662,6 +662,10 @@ body{
 		margin: 3%;
 	}
 
+	.industry .container{
+		padding: 0 25px;
+	}
+
 	.testimonial{
 		float: none;
 		width: 100%;
@@ -673,6 +677,14 @@ body{
 		border-left: 0;
 		border-top: 1px solid;
 		border-bottom: 1px solid;
+	}
+
+	.industryh{
+		font-size: 25px;
+	}
+
+	.headerv{
+		margin: 15px 0 20px 0;
 	}
 
 	.headerv h3{
@@ -729,6 +741,22 @@ body{
 	}
 
 	.termspolicy ul{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 444px){
+	#mob_button{
+		width: 45%;
+		font-size: 12px;
+	}
+
+	#mob_button2{
+		width: 45%;
+		font-size: 12px;
+	}
+
+	.testimonial{
 		padding: 0;
 	}
 }
