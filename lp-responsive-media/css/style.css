@@ -306,7 +306,7 @@ body{
 }
 
 .awardsh h3{
-	margin: 50px 0;
+	margin: 35px 0;
 }
 
 .industry{
@@ -426,11 +426,12 @@ body{
 	list-style: none;
 	display: inline;
 	border-right: 2px solid;
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 }
 
 .termspolicy ul li:last-child{
 	border-right: 0;
+	padding: 0 10px;
 }
 
 .termspolicy ul li a{
@@ -773,7 +774,7 @@ body{
 	}
 }
 
-@media screen and (max-width: 444px){
+@media screen and (max-width: 464px){
 	#mob_button{
 		width: 45%;
 		font-size: 12px;
@@ -786,5 +787,11 @@ body{
 
 	.testimonial{
 		padding: 0;
+	}
+}
+
+@media screen and (max-width: 374px){
+	.posts h3{
+		font-size: 8px;
 	}
 }
