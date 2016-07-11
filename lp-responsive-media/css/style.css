@@ -13,10 +13,7 @@ body{
 .header{
 	background: #374043;
     text-align: center;
-}
-
-.heading img{
-	margin-top: 25px;
+    padding-top: 25px;
 }
 
 #phone_number{
@@ -24,9 +21,9 @@ body{
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 20px;
-	margin-top: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+	line-height: 15px;
 }
 
 #phone_number:hover{
@@ -41,10 +38,10 @@ body{
 	background: #83bd30;
 	cursor: pointer;
 	border: 0;
-    padding: 10px;
+    padding: 10px 25px;
     color: #ffffff;
     font-size: 13px;
-    margin-top: 10px;
+    margin: 15px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     outline: none;
@@ -64,7 +61,6 @@ body{
 
 .numbutton{
 	float: right;
-	padding: 0 25px;
 }
 
 .navbar{
@@ -120,7 +116,7 @@ body{
 }
 
 .textwp{
-	width: 700px;
+	width: 60%;
     float: left;
 }
 
@@ -147,32 +143,104 @@ body{
     text-align: initial;
 }
 
-#wpbook{
+/*#wpbook{
     padding-top: 60px;
     float: right;
 }
 
 #wpbook2{
 	display: none;
+}*/
+
+.form_whitepaper{
+	width: 30%;
+	display: inline-block;
+	background: #ffffff;
+	color: #ffffff;
+	margin: 20px 0;
+	float: right;
+	font-family: 'Raleway', sans-serif;
+}
+
+.form_whitepaper h2{
+	background: #2889ce;
+	margin: 0;
+	font-weight: bold;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.form_whitepaper form input{
+	width: 85%;
+}
+
+.form_whitepaper form select{
+	color: #838383;
+	outline: none;
+	margin: 0;
+	width: 100%;
+	border: 0;
+	height: 100%;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+}
+
+.form_whitepaper form input, select{
+	margin: 5px;
+}
+
+.wpform{
+	display: inline-block;
+	border: 1px solid #eaeaea;
+	width: 85%;
+	height: 25px;	
+	margin: 5px;
+	padding-left: 15px;
+}
+
+.wpform:first-child{
+	margin-top:20px;
+}
+
+label {
+	position:relative
+}
+
+label:after {
+    content: '▼';
+    font: 15px "Raleway", sans-serif;
+    color: #ffffff;
+    right: 0px;
+    top: 0px;
+    background: #2889ce;
+    padding: 4px 6px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.option{
+	color: black;
 }
 
 #wp_button{
-	float: right;
 	padding: 10px;
 	border-radius: 10px;
-	background: #83bd30;
+	background: #2889ce;
 	cursor: pointer;
 	border: 0;
     color: #ffffff;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     outline: none;
 }
 
 #wp_button:hover{
-	background: #8dce31;
+	background: #25a2fb;
 }
 
 #mob_button{
@@ -188,7 +256,6 @@ body{
     float: right;
     margin: 10px 0;
 }
-
 
 #mob_button2{
 	padding: 10px;
@@ -292,7 +359,7 @@ body{
 	width: 23%;
 	height: 150px;
 	float: left;
-	margin: 1%;
+	margin: 1% 1% 1% 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -305,7 +372,7 @@ body{
 	text-align: initial;
 }
 
-.awardsh h3{
+.awardsh h2{
 	margin: 35px 0;
 }
 
@@ -319,11 +386,12 @@ body{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 50px;
-	padding: 0 4%;
+	/*padding: 0 4%;*/
+	padding:0;
 	text-align: initial;
 }
 
-.industryh h3{
+.industryh h2{
 	margin: 4% 0;
 }
 
@@ -341,6 +409,10 @@ body{
 	padding: 0 4%;
 }
 
+.testimonial:first-child{
+	padding: 0 4% 0 0;
+}
+
 .testimonial:nth-child(2){
 	border-right: 1px solid;
 	border-left: 1px solid;
@@ -351,13 +423,17 @@ body{
 	background: #ffffff;
 }
 
+.conheadvid{
+	text-align: initial;
+}
+
 .headerv{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	margin: 30px 0 50px 0;
 }
 
-.headerv h3{
+.headerv h2{
 	margin: 0;
 	font-size: 50px;
 	text-align: initial;
@@ -512,12 +588,16 @@ body{
 		display: inline-block;
 	}
 
-	#wpbook {
+	/*#wpbook {
 		float: left;
+	}*/
+
+	.form_whitepaper{
+		width: 80%;
+		float: none;
 	}
 
 	#wp_button{
-		float: left;
 		clear: both;
 	}
 
@@ -548,10 +628,10 @@ body{
 		font-size: 11px;
 	}
 
-	.bookbutton{
+/*	.bookbutton{
 		text-align: center;
 	}
-
+*/
 }
 
 @media screen and (max-width: 767px){
@@ -578,6 +658,10 @@ body{
 	}
 
 	.textwp p{
+		display: none;
+	}
+
+	.form_whitepaper{
 		display: none;
 	}
 
@@ -680,7 +764,7 @@ body{
 		cursor: pointer;
 	}
 
-	.awardsh h3{
+	.awardsh h2{
 		background: #ffffff;
 		margin: 0;
 		text-align: center;
@@ -716,7 +800,7 @@ body{
 		margin: 15px 0 20px 0;
 	}
 
-	.headerv h3{
+	.headerv h2{
 		font-size: 25px;
 	}
 
@@ -794,4 +878,20 @@ body{
 	.posts h3{
 		font-size: 8px;
 	}
+}
+
+::-webkit-input-placeholder {
+   color: #cbcbcb;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #cbcbcb;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #cbcbcb;  
+}
+
+:-ms-input-placeholder {  
+   color: #cbcbcb;  
 }
