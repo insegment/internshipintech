@@ -177,8 +177,8 @@ body{
 	width: 85%;
 }
 
-.form_whitepaper form select{
-	color: #838383;
+.form_whitepaper form select{ 
+	color: black;
 	outline: none;
 	margin: 0;
 	width: 100%;
@@ -193,6 +193,7 @@ body{
 }
 
 .wpform{
+	font-family: 'Raleway', sans-serif;
 	display: inline-block;
 	border: 1px solid #eaeaea;
 	width: 85%;
@@ -203,6 +204,11 @@ body{
 
 .wpform:first-child{
 	margin-top:20px;
+}
+
+label.wpform{
+	width: 86%;
+	padding-left: 13px;
 }
 
 label {
@@ -227,7 +233,7 @@ label:after {
 
 #wp_button{
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 	background: #2889ce;
 	cursor: pointer;
 	border: 0;
@@ -291,6 +297,18 @@ label:after {
 	text-align: center;
 }
 
+.arbor .container{
+	    padding: 0;
+}
+
+.warbor{
+	padding: 0 10px;
+}
+
+#readmore{
+	margin-bottom: 60px;
+}
+
 .whitepapertext{
 	display: none;
 }
@@ -339,7 +357,7 @@ label:after {
     color: #94bb00;
 }
 
-#mobsarbor .fa {
+.mobsarbor .fa {
     	font-size: 25px;
 	}
 
@@ -352,6 +370,7 @@ label:after {
 	display: inline-block;
 	width: 100%;
 	padding-bottom: 20px;
+	box-sizing: border-box;
 }
 
 .awardsbox{
@@ -430,7 +449,7 @@ label:after {
 .headerv{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	margin: 30px 0 50px 0;
+	margin: 22px 0 38px 0;
 }
 
 .headerv h2{
@@ -440,6 +459,7 @@ label:after {
 }
 
 .convideo{
+	margin-bottom: 100px;
 	display: inline-block;
 }
 
@@ -613,9 +633,9 @@ label:after {
 		display: initial;
 	}
 
-	.convideo{
+/*	.convideo{
 		padding-right: 25%;
-	}
+	}*/
 }
 
 #downloadlogo{
@@ -720,6 +740,10 @@ label:after {
 		padding: 0;
 	}
 
+	.warbor {
+    padding: 0;
+	}
+
 	.head2 h2{
 		font-size: 25px;
 		padding: 0 10px;
@@ -741,7 +765,11 @@ label:after {
 		display: none;
 	}
 
-	#mobsarbor{
+	.right:last-child{
+		display: none;
+	}
+
+	.mobsarbor{
 		background: #f3f3f3;
 		width: 100%;
 		float: none;
@@ -751,7 +779,7 @@ label:after {
 		line-height: 50px;
 	}
 
-	#mobsarbor h3:after{
+	.mobsarbor h3:after{
 		content: '\f0d7';
 		font-family: 'FontAwesome';
 		font-size: 30px;
@@ -764,10 +792,19 @@ label:after {
 		cursor: pointer;
 	}
 
+	.awards .container{
+		padding: 0;
+	}
+
 	.awardsh h2{
 		background: #ffffff;
 		margin: 0;
 		text-align: center;
+		padding: 0 10px;
+	}
+
+	.awardsboxcon{
+		padding: 0 10px;
 	}
 
 	.awardsbox{
@@ -804,9 +841,14 @@ label:after {
 		font-size: 25px;
 	}
 
+	.conheadvid{
+		text-align: center;
+	}
+
 	.convideo{
 		width: 65%;
 		padding: 0;
+		margin-bottom: 35px;
 	}
 
 	.video{
@@ -851,6 +893,7 @@ label:after {
 
 	.termspolicy{
 		padding: 0;
+		clear: both;
 	}
 
 	.termspolicy ul{
