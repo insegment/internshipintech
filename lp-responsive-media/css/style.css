@@ -468,8 +468,10 @@ label:after {
 }
 
 .wfooter{
+	width: 100%;
 	display: inline-block;
 	padding: 2% 0;
+	box-sizing: border-box;
 }
 
 .flogo{
@@ -585,6 +587,37 @@ label:after {
 	}
 
 	.video{
+		clear: both;
+	}
+
+	.social{
+		display: none;
+	}
+
+	.msocial{
+		display: inline-block;
+		float: right;
+		padding-top: 15px;
+	}
+
+	.msocial ul{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1176px){
+	.flogo{
+		width: 15%;
+	}
+
+	.copyright{
+		clear: both;
+		text-align: initial;
+	}
+
+	.termspolicy{
+		padding-top: 0;
 		clear: both;
 	}
 }
@@ -724,7 +757,7 @@ label:after {
 	}
 
 	.warbor {
-    padding: 0;
+    	padding: 0;
 	}
 
 	.head2 h2{
@@ -856,21 +889,6 @@ label:after {
 		display: none;
 	}
 
-	.flogo{
-		width: 20%;
-	}
-
-	.msocial{
-		display: inline-block;
-		float: right;
-		padding-top: 20px;
-	}
-
-	.msocial ul{
-		padding: 0;
-		margin: 0;
-	}
-
 	.copyright{
 		clear: both;
 	}
@@ -889,7 +907,7 @@ label:after {
 	}
 }
 
-@media screen and (max-width: 464px){
+@media screen and (max-width: 495px){
 	#mob_button{
 		width: 45%;
 		font-size: 12px;
@@ -910,6 +928,13 @@ label:after {
 		font-size: 8px;
 	}
 }
+
+@media screen and (max-width: 410px){
+	.msocial ul li{
+		font-size: 13px;
+	}
+}
+
 
 ::-webkit-input-placeholder {
    color: #cbcbcb;
