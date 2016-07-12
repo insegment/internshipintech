@@ -183,6 +183,7 @@ body{
 	height: 100%;
 	cursor: pointer;
 	font-weight: 700;
+	-webkit-appearance: none;
 }
 
 .form_whitepaper form input, select{
@@ -205,8 +206,8 @@ body{
 }
 
 label.wpform{
-	width: 86%;
-	padding-left: 13px;
+	width: 85%;
+	padding-left: 15px;
 }
 
 label {
@@ -219,6 +220,7 @@ label:after {
     color: #ffffff;
     right: 0px;
     top: 0px;
+    bottom: 0px;
     background: #2889ce;
     padding: 4px 6px;
     position:absolute;
@@ -414,7 +416,7 @@ label:after {
 
 .testimonial{
 	float: left;
-    width: 25%;
+    width: 33%;
     text-align: initial;
     font-size: 15px;
 	padding: 0 4%;
@@ -639,6 +641,14 @@ label:after {
 @media screen and (max-width: 771px){
 	.menu ul li a{
 		font-size: 11px;
+	}
+
+	.footer .container{
+		padding: 0;
+	}
+
+	.wfooter{
+		padding: 0 10px;
 	}
 
 /*	.bookbutton{
