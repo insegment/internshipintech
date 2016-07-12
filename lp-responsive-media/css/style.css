@@ -1,5 +1,6 @@
 body{
 	margin:0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -21,7 +22,6 @@ body{
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	line-height: 15px;
 }
@@ -42,7 +42,6 @@ body{
     color: #ffffff;
     font-size: 13px;
     margin: 15px 0;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     outline: none;
 }
@@ -136,7 +135,6 @@ body{
 
 .textwp p{
 	float: left;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #ffffff;
     font-size: 17px;
@@ -159,7 +157,6 @@ body{
 	color: #ffffff;
 	margin: 20px 0;
 	float: right;
-	font-family: 'Raleway', sans-serif;
 }
 
 .form_whitepaper h2{
@@ -185,7 +182,6 @@ body{
 	border: 0;
 	height: 100%;
 	cursor: pointer;
-	font-family: 'Raleway', sans-serif;
 }
 
 .form_whitepaper form input, select{
@@ -239,7 +235,6 @@ label:after {
 	border: 0;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin-bottom: 15px;
     outline: none;
@@ -257,7 +252,6 @@ label:after {
 	border: 0;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     float: right;
     margin: 10px 0;
@@ -271,7 +265,6 @@ label:after {
 	border: 0;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     float: left;
     margin: 10px 0;
@@ -334,12 +327,10 @@ label:after {
 
 .posts{
 	display: inline-block;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 }
 
 .posts h3{
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
 }
 
@@ -422,10 +413,10 @@ label:after {
 .testimonial{
 	float: left;
     width: 25%;
-    font-family: 'Open Sans', sans-serif;
     text-align: initial;
     font-size: 15px;
 	padding: 0 4%;
+	box-sizing: border-box;
 }
 
 .testimonial:first-child{
@@ -483,8 +474,6 @@ label:after {
 
 .wfooter{
 	display: inline-block;
-	justify-content: center;
-	align-items: center;
 	padding: 2% 0;
 }
 
@@ -707,7 +696,6 @@ label:after {
 		color: #89bb3a;
 		font-size: 20px;
 		margin-top: 20px;
-		font-family: 'Open Sans', sans-serif;
 		font-weight: bold;
 	}
 
@@ -726,7 +714,6 @@ label:after {
 	.whitepapertext{
 		display: inline-block;
 		font-size: 12px;
-		font-family: 'Open Sans', sans-serif;
 		padding: 0 10px;
 	}
 
