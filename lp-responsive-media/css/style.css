@@ -930,6 +930,15 @@ label:after {
 }
 
 @media screen and (max-width: 410px){
+	.awardsh{
+		font-size: 45px;
+	}
+
+	.crn5 img{
+		width: 90%;
+		height: auto;
+	}
+
 	.msocial ul li{
 		font-size: 13px;
 	}
