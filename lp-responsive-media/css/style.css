@@ -604,11 +604,10 @@ label:after {
 		padding: 0;
 		margin: 0;
 	}
-}
-
-@media screen and (max-width: 1176px){
-	.flogo{
-		width: 15%;
+	
+	.termspolicy{
+		padding-top: 0;
+		clear: both;
 	}
 
 	.copyright{
@@ -616,9 +615,14 @@ label:after {
 		text-align: initial;
 	}
 
-	.termspolicy{
-		padding-top: 0;
-		clear: both;
+	.termspolicy ul{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1176px){
+	.flogo{
+		width: 15%;
 	}
 }
 
@@ -889,10 +893,6 @@ label:after {
 		display: none;
 	}
 
-	.copyright{
-		clear: both;
-	}
-
 	.copyright p{
 		padding-top: 15px;
 	}
@@ -900,10 +900,6 @@ label:after {
 	.termspolicy{
 		padding: 0;
 		clear: both;
-	}
-
-	.termspolicy ul{
-		padding: 0;
 	}
 }
 
