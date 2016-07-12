@@ -580,8 +580,12 @@ label:after {
 		background-repeat: round;
 	}
 
-	#wpbook {
-    	height: auto;
+	.conheadvid{
+		text-align: center;
+	}
+
+	.video{
+		clear: both;
 	}
 }
 
