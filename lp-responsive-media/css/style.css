@@ -145,15 +145,6 @@ iframe{
     text-align: initial;
 }
 
-/*#wpbook{
-    padding-top: 60px;
-    float: right;
-}
-
-#wpbook2{
-	display: none;
-}*/
-
 .form_whitepaper{
 	width: 30%;
 	display: inline-block;
@@ -627,10 +618,6 @@ label:after {
 	#wpbook2{
 		display: initial;
 	}
-
-/*	.convideo{
-		padding-right: 25%;
-	}*/
 }
 
 #downloadlogo{
@@ -650,11 +637,6 @@ label:after {
 	.wfooter{
 		padding: 0 10px;
 	}
-
-/*	.bookbutton{
-		text-align: center;
-	}
-*/
 }
 
 @media screen and (max-width: 767px){
