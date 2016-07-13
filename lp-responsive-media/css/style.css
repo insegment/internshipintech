@@ -130,7 +130,7 @@ iframe{
 	font-weight: bold;
 	font-size: 45px;
 	color: #ffffff;
-	text-align: initial;
+	text-align: left;
 }
 
 .textwp h1 span{
@@ -142,7 +142,7 @@ iframe{
 	font-weight: 600;
 	color: #ffffff;
     font-size: 17px;
-    text-align: initial;
+    text-align: left;
 }
 
 .form_whitepaper{
@@ -306,7 +306,7 @@ label:after {
 }
 
 .warbor{
-	text-align: initial;
+	text-align: left;
 }
 
 .warbor h2{
@@ -378,7 +378,7 @@ label:after {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 50px;
-	text-align: initial;
+	text-align: left;
 }
 
 .awardsh h2{
@@ -395,9 +395,8 @@ label:after {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 50px;
-	/*padding: 0 4%;*/
 	padding:0;
-	text-align: initial;
+	text-align: left;
 }
 
 .industryh h2{
@@ -433,7 +432,7 @@ label:after {
 }
 
 .conheadvid{
-	text-align: initial;
+	text-align: left;
 }
 
 .headerv{
@@ -445,7 +444,7 @@ label:after {
 .headerv h2{
 	margin: 0;
 	font-size: 50px;
-	text-align: initial;
+	text-align: left;
 }
 
 .convideo{
@@ -612,7 +611,7 @@ label:after {
 
 	.copyright{
 		clear: both;
-		text-align: initial;
+		text-align: left;
 	}
 
 	.termspolicy ul{
