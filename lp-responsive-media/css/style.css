@@ -48,6 +48,8 @@ iframe{
     margin: 15px 0;
     font-weight: bold;
     outline: none;
+    -webkit-appearance: none;
+
 }
 
 #header_button:hover{
@@ -100,7 +102,9 @@ iframe{
 	font-size: 18px;
     margin: 0 20px;
 }
-
+#menualast{
+	margin-right: 0;
+}
 #firstnavelem{
 	margin-left: 0;
 }
@@ -237,6 +241,7 @@ label:after {
     font-weight: bold;
     margin-bottom: 15px;
     outline: none;
+    -webkit-appearance: none;
 }
 
 #wp_button:hover{
@@ -365,7 +370,7 @@ label:after {
 
 .awardsbox{
 	background: #ffffff;
-	width: 23%;
+	width: 24%;
 	height: 150px;
 	float: left;
 	margin: 1% 1% 1% 0;
@@ -391,6 +396,10 @@ label:after {
 	color: #ffffff;
 }
 
+.industryw{
+	margin-bottom: 35px;
+}
+
 .industryh{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -411,7 +420,7 @@ label:after {
 .testimonial{
 	float: left;
     width: 33%;
-    text-align: initial;
+    text-align: left;
     font-size: 15px;
 	padding: 0 4%;
 	box-sizing: border-box;
@@ -426,6 +435,10 @@ label:after {
 	border-left: 1px solid;
 }
 
+.testimonial:last-child{
+	padding-right: 0;
+}
+
 .svideo{
 	text-align: center;
 	background: #ffffff;
@@ -433,6 +446,7 @@ label:after {
 
 .conheadvid{
 	text-align: left;
+	width: 100%;
 }
 
 .headerv{
@@ -448,6 +462,7 @@ label:after {
 }
 
 .convideo{
+	width: 100%;
 	margin-bottom: 100px;
 	display: inline-block;
 }
@@ -456,8 +471,8 @@ label:after {
 	float: left;
 }
 
-#firstvid{
-	padding-right: 100px;
+#secondvideo{
+	float: right;
 }
 
 .footer{
@@ -571,10 +586,6 @@ label:after {
 	.textwp{
 		width: 55%;
 	}
-	
-	.menu ul li a{
-	    font-size: 17px;	
-	}
 
 	.whitepaper{
 		height: auto;
@@ -583,10 +594,6 @@ label:after {
 
 	.conheadvid{
 		text-align: center;
-	}
-
-	.video{
-		clear: both;
 	}
 
 	.social{
@@ -625,18 +632,42 @@ label:after {
 	}
 }
 
-@media screen and (max-width: 984px){
-	.menu ul li a{
-		font-size: 12px;
+@media screen and (max-width: 1100px){
+	.video{
+		clear: both;
+		float: none;
 	}
 
+	#secondvideo{
+		margin-top: 5px;
+		float: none;
+	}
+
+	#youtube{
+		width: 70%;
+	}
+
+	#youtube2{
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 1047px){
+	.menu ul li a{
+	    font-size: 17px;	
+	}
+}
+@media screen and (max-width: 1001px){
+	.menu ul li a{
+	    font-size: 16px;	
+	}
+}
+
+@media screen and (max-width: 984px){
 	.bookbutton{
 		display: inline-block;
 	}
-
-	/*#wpbook {
-		float: left;
-	}*/
 
 	.form_whitepaper{
 		width: 80%;
@@ -662,12 +693,23 @@ label:after {
 
 #downloadlogo{
 	display: none;
-
 }
 
-@media screen and (max-width: 771px){
+@media screen and (max-width: 935px){
 	.menu ul li a{
-		font-size: 11px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 889px){
+	.menu ul li a{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 843px){
+	.menu ul li a{
+		font-size: 12px;
 	}
 
 	.footer .container{
@@ -865,28 +907,19 @@ label:after {
 	}
 
 	.convideo{
-		width: 65%;
+		width: 85%;
 		padding: 0;
 		margin-bottom: 35px;
 	}
 
-	.video{
-		padding: 0;
-	}
-
 	#youtube{
 		width: 100%;
-		height: 155px;
 	}
 
 	#youtube2{
 		width: 100%;
-		height: 155px;
 	}
 
-	#firstvid {
-    	padding-right: 0px;
-	}
 
 	.social{
 		display: none;
