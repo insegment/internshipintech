@@ -7,7 +7,7 @@ $message ='
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
 		<tr>
 			<td style="background:#374043;padding: 40px 30px 40px 30px;">
-				<a href="http://www.arbornetworks.com" target="_blank"><img img width="221" height="60" src="img/Arbor_Logo.png" alt="logo for arbor networks a division of netscout"></a>
+				<a href="http://www.arbornetworks.com" target="_blank"><img img width="221" height="60" src="http://i.imgur.com/87g1I1l.png" alt="logo for arbor networks a division of netscout"></a>
 			</td>
 		</tr>
 		<tr>
@@ -143,24 +143,24 @@ $message ='
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<td width="260px" valign="top">
-							<span style="color:#ffffff">&copy Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
+							<span style="color:#ffffff">&copy; Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
 						</td>
 						<td width="260px" valign="top" align="right">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/facebook.png"></a>
+									<a href="#"><img src="http://i.imgur.com/v18sBvL.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/twitter.png"></a>
+									<a href="#"><img src="http://i.imgur.com/y8UPLsa.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/linkedin.png"></a>
+									<a href="#"><img src="http://i.imgur.com/IT0M8kX.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/youtube.png"></a>
+									<a href="#"><img src="http://i.imgur.com/aG5VvPn.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/webfeed.png"></a>
+									<a href="#"><img src="http://i.imgur.com/95uUqJ5.png"></a>
 								</td>
 							</table>
 						</td>
@@ -189,7 +189,7 @@ $message ='
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
 		<tr>
 			<td style="background:#374043;padding: 40px 30px 40px 30px;">
-				<a href="http://www.arbornetworks.com" target="_blank"><img img width="221" height="60" src="img/Arbor_Logo.png" alt="logo for arbor networks a division of netscout"></a>
+				<a href="http://www.arbornetworks.com" target="_blank"><img img width="221" height="60" src="http://i.imgur.com/87g1I1l.png" alt="logo for arbor networks a division of netscout"></a>
 			</td>
 		</tr>
 		<tr>
@@ -320,24 +320,24 @@ $message ='
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<td width="260px" valign="top">
-							<span style="color:#ffffff">&copy Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
+							<span style="color:#ffffff">&copy; Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
 						</td>
 						<td width="260px" valign="top" align="right">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/facebook.png"></a>
+									<a href="#"><img src="http://i.imgur.com/v18sBvL.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/twitter.png"></a>
+									<a href="#"><img src="http://i.imgur.com/y8UPLsa.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/linkedin.png"></a>
+									<a href="#"><img src="http://i.imgur.com/IT0M8kX.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/youtube.png"></a>
+									<a href="#"><img src="http://i.imgur.com/aG5VvPn.png"></a>
 								</td>
 								<td width="52px" valign="top" style="text-align: center;">
-									<a href="#"><img src="img/webfeed.png"></a>
+									<a href="#"><img src="http://i.imgur.com/95uUqJ5.png"></a>
 								</td>
 							</table>
 						</td>
