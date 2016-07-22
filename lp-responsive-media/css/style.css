@@ -7,6 +7,15 @@ iframe{
 	border:0;
 }
 
+.error{
+	display: none;
+	color: red;
+	text-align: left;
+    float: left;
+    margin: 0 0 0 35px;
+    font-size: 12px;
+}
+
 .container{
 	max-width: 1180px;
     display: inline-block;
@@ -127,6 +136,11 @@ iframe{
     float: left;
 }
 
+.thank-you-wp{
+	width: 70%;
+	padding: 100px 0;
+}
+
 .textwp h1{
 	margin: 0;
 	padding-top: 35px;
@@ -147,6 +161,24 @@ iframe{
 	color: #ffffff;
     font-size: 17px;
     text-align: left;
+}
+
+#phone_number3{
+	text-decoration: none;
+    color: #afed44;
+}
+
+#phone_number3:hover{
+	text-decoration: underline;
+}
+
+#download-here{
+	color: #afed44;
+	text-decoration: none;	
+}
+
+#download-here:hover{
+	text-decoration: underline;
 }
 
 .form_whitepaper{
@@ -225,7 +257,6 @@ label:after {
     position:absolute;
     pointer-events:none;
 }
-
 .option{
 	color: black;
 }
@@ -259,6 +290,7 @@ label:after {
     font-weight: bold;
     float: right;
     margin: 10px 0;
+    outline: none;
 }
 
 #mob_button2{
@@ -272,6 +304,7 @@ label:after {
     font-weight: bold;
     float: left;
     margin: 10px 0;
+    outline: none;
 }
 
 #wp_button:before{
@@ -581,10 +614,17 @@ label:after {
 	color: #94bb00;
 }
 
-@media screen and (max-width: 1199px){
+#downloadlogo{
+	display: none;
+}
 
+@media screen and (max-width: 1199px) {
 	.textwp{
 		width: 55%;
+	}
+
+	.thank-you-wp{
+		width: 90%;
 	}
 
 	.whitepaper{
@@ -624,51 +664,31 @@ label:after {
 	.termspolicy ul{
 		padding: 0;
 	}
-}
-
-@media screen and (max-width: 1176px){
 	.flogo{
 		width: 15%;
 	}
-}
-
-@media screen and (max-width: 1100px){
 	.video{
-		clear: both;
 		float: none;
 	}
-
 	#secondvideo{
 		margin-top: 5px;
 		float: none;
 	}
-
-	#youtube{
-		width: 70%;
-	}
-
-	#youtube2{
-		width: 70%;
-	}
-
 }
 
-@media screen and (max-width: 1047px){
-	.menu ul li a{
-	    font-size: 17px;	
-	}
-}
-@media screen and (max-width: 1001px){
+@media screen and (max-width: 1023px){
 	.menu ul li a{
 	    font-size: 16px;	
 	}
 }
 
-@media screen and (max-width: 984px){
-	.bookbutton{
-		display: inline-block;
+@media screen and (max-width: 991px){
+	.menu ul li a{
+	    font-size: 12px;	
 	}
-
+	.error{
+		margin: 0px 0px 0px 52px;
+	}
 	.form_whitepaper{
 		width: 80%;
 		float: none;
@@ -682,6 +702,10 @@ label:after {
 		width: 100%;
 	}
 
+	.thank-you-wp{
+		width: 90%;
+	}
+
 	#wpbook{
 		display: none;
 	}
@@ -689,45 +713,25 @@ label:after {
 	#wpbook2{
 		display: initial;
 	}
-}
-
-#downloadlogo{
-	display: none;
-}
-
-@media screen and (max-width: 935px){
-	.menu ul li a{
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 889px){
-	.menu ul li a{
-		font-size: 14px;
-	}
-}
-
-@media screen and (max-width: 843px){
-	.menu ul li a{
-		font-size: 12px;
-	}
-
-	.footer .container{
-		padding: 0;
-	}
-
 	.wfooter{
 		padding: 0 10px;
 	}
 }
 
 @media screen and (max-width: 767px){
+	.footer .container{
+		padding: 0;
+	}
 	#downloadlogo{
 		display: initial;
 		color: #ffffff;
 	    float: right;
 	    font-size: 30px;
 	    cursor: pointer;
+	}
+
+	.thank-you-wp{
+		padding: 0;
 	}
 
 	.heading img{
@@ -933,9 +937,6 @@ label:after {
 		padding: 0;
 		clear: both;
 	}
-}
-
-@media screen and (max-width: 495px){
 	#mob_button{
 		width: 45%;
 		font-size: 12px;
@@ -949,15 +950,9 @@ label:after {
 	.testimonial{
 		padding: 0;
 	}
-}
-
-@media screen and (max-width: 374px){
 	.posts h3{
 		font-size: 8px;
 	}
-}
-
-@media screen and (max-width: 410px){
 	.awardsh{
 		font-size: 45px;
 	}
