@@ -172,12 +172,12 @@ $message ='
 
 $to ="puscas.ovidiu93@gmail.com";
 $today = date("F j, Y, g:i a");
-$mh->setSubject (t("Form submission from Arbor - networks visibility LP: %s", $today));
+$subiect = "Form submission from Arbor - networks visibility LP: ". $today;
 
 $headers = 'From: contact@arbornetworks.com' . "\r\n";
 $headers .= 'Bcc: ovidiu.puscas@intechdynamics.com' . "\r\n";
 
-mail( $_POST['email'], $mh, $message, $headers );
+mail( $_POST['email'], $subiect, $message, $headers );
 
 $message ='
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
@@ -342,7 +342,7 @@ $message ='
 	</table>
 ';
 
-mail( $to, $mh, $message, $headers );
+mail( $to, $subiect, $message, $headers );
 header("Location: http://internship.instagingserver.com/ovidiu/lp-responsive-media/thank-you.html");
 die();
 
