@@ -175,10 +175,10 @@ $message ='
 $to ="puscas.ovidiu93@gmail.com";
 $today = date("F j, Y, g:i a");
 $subiect = "Form submission from Arbor - networks visibility LP: ". $today;
-
+$headers = "";
 $headers .= "From: contact@arbornetworks.com" . "\r\n";
 $headers .= "Bcc: ovidiu.puscas@intechdynamics.com" . "\r\n";
-$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
 
 mail( $_POST['email'], $subiect, $message, $headers );
