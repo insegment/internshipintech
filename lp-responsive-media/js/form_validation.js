@@ -8,8 +8,8 @@
 		    var phone = document.forms["arbor_form"]["phone"].value;
 		    var job = document.forms["arbor_form"]["job"].value;
 		    var industry = document.forms["arbor_form"]["industry"];
-			var nameExp = new RegExp(/^[a-zA-Z -']{2,}$/);
-			var companyExp = new RegExp(/^[a-zA-Z -']{3,}$/);
+			var nameExp = new RegExp(/^[a-zA-Z -]{2,}$/);
+			var companyExp = new RegExp(/^[a-zA-Z -]{3,}$/);
 			var emailExp = new RegExp (/[a-z0-9]+([-+._][a-z0-9]+){0,2}@.*?(\.(a(?:[cdefgilmnoqrstuwxz]|ero|(?:rp|si)a)|b(?:[abdefghijmnorstvwyz]iz)|c(?:[acdfghiklmnoruvxyz]|at|o(?:m|op))|d[ejkmoz]|e(?:[ceghrstu]|du)|f[ijkmor]|g(?:[abdefghilmnpqrstuwy]|ov)|h[kmnrtu]|i(?:[delmnoqrst]|n(?:fo|t))|j(?:[emop]|obs)|k[eghimnprwyz]|l[abcikrstuvy]|m(?:[acdeghklmnopqrstuvwxyz]|il|obi|useum)|n(?:[acefgilopruz]|ame|et)|o(?:m|rg)|p(?:[aefghklmnrstwy]|ro)|qa|r[eosuw]|s[abcdeghijklmnortuvyz]|t(?:[cdfghjklmnoprtvwz]|(?:rav)?el)|u[agkmsyz]|v[aceginu]|w[fs]|y[etu]|z[amw])\b){1,2}/);
 			var phoneExp = new RegExp (/^[\\(]{0,1}([0-9]){3}[\\)]{0,1}[ ]?([^0-1]){1}([0-9]){2}[ ]?[-]?[ ]?([0-9]){4}[ ]*((x){0,1}([0-9]){1,5}){0,1}$/)
 /*FIRST NAME*/
