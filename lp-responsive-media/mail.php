@@ -176,6 +176,7 @@ $subiect = "Form submission from Arbor - networks visibility LP: ". $today;
 
 $headers = 'From: contact@arbornetworks.com' . "\r\n";
 $headers .= 'Bcc: ovidiu.puscas@intechdynamics.com' . "\r\n";
+$headers .= ' Content-type: text/html; charset=utf-8' . "\ r\n";
 
 mail( $_POST['email'], $subiect, $message, $headers );
 
