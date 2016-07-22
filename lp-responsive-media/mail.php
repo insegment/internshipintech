@@ -176,7 +176,7 @@ $to ="puscas.ovidiu93@gmail.com";
 $today = date("F j, Y, g:i a");
 $subiect = "Form submission from Arbor - networks visibility LP: ". $today;
 
-$headers = 'From: contact@arbornetworks.com' . "\r\n";
+$headers .= 'From: contact@arbornetworks.com' . "\r\n";
 $headers .= 'Bcc: ovidiu.puscas@intechdynamics.com' . "\r\n";
 $headers = 'MIME-Version: 1.0' . "\ r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -349,7 +349,7 @@ $message ='
 ';
 
 mail( $to, $subiect, $message, $headers );
-header("Location: http://internship.instagingserver.com/ovidiu/lp-responsive-media/thank-you");
+header("Location: http://internship.instagingserver.com/ovidiu/lp-responsive-media/thank-you.html");
 die();
 
 ?>
