@@ -1,5 +1,7 @@
 <?php
 
+/*USER MAIL*/
+
 $message ='
 	
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
@@ -176,9 +178,12 @@ $subiect = "Form submission from Arbor - networks visibility LP: ". $today;
 
 $headers = 'From: contact@arbornetworks.com' . "\r\n";
 $headers .= 'Bcc: ovidiu.puscas@intechdynamics.com' . "\r\n";
-$headers .= ' Content-type: text/html; charset=utf-8' . "\ r\n";
+$headers = 'MIME-Version: 1.0' . "\ r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 mail( $_POST['email'], $subiect, $message, $headers );
+
+/*INFORMATIVE MAIL*/
 
 $message ='
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
@@ -344,7 +349,7 @@ $message ='
 ';
 
 mail( $to, $subiect, $message, $headers );
-header("Location: http://internship.instagingserver.com/ovidiu/lp-responsive-media/thank-you.html");
+header("Location: http://internship.instagingserver.com/ovidiu/lp-responsive-media/thank-you");
 die();
 
 ?>
