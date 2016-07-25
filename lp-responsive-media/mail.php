@@ -41,10 +41,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Last Name</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['lname'] . '</p>
 									</td>
 								</tr>
@@ -55,10 +55,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Company</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['company'] . '</p>
 									</td>
 								</tr>
@@ -69,10 +69,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Email</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['email'] . '</p>
 									</td>
 								</tr>
@@ -83,10 +83,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Country</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['country'] . '</p>
 									</td>
 								</tr>
@@ -97,10 +97,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Phone Number</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['phone'] . '</p>
 									</td>
 								</tr>
@@ -111,10 +111,10 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Job Title</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['job'] . '</p>
 									</td>
 								</tr>
@@ -125,7 +125,7 @@ $message ='
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Industry</p>									
 									</td>
 									<td width="260px" valign="top" style="text-align: center;">
@@ -142,24 +142,24 @@ $message ='
 			<td style="background:#374043;padding: 40px 30px 40px 30px;">
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tr>
-						<td width="260px" valign="top">
+						<td width="50%" valign="top">
 							<span style="color:#ffffff">&copy; Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
 						</td>
-						<td width="260px" valign="top" align="right">
+						<td width="50%" valign="top" align="right">
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
-								<td width="52px" valign="top" style="text-align: center;">
+								<td width="20%" valign="top" style="text-align: center;">
 									<a href="#"><img src="http://i.imgur.com/v18sBvL.png"></a>
 								</td>
-								<td width="52px" valign="top" style="text-align: center;">
+								<td width="20%" valign="top" style="text-align: center;">
 									<a href="#"><img src="http://i.imgur.com/y8UPLsa.png"></a>
 								</td>
-								<td width="52px" valign="top" style="text-align: center;">
+								<td width="20%" valign="top" style="text-align: center;">
 									<a href="#"><img src="http://i.imgur.com/IT0M8kX.png"></a>
 								</td>
-								<td width="52px" valign="top" style="text-align: center;">
+								<td width="20%" valign="top" style="text-align: center;">
 									<a href="#"><img src="http://i.imgur.com/aG5VvPn.png"></a>
 								</td>
-								<td width="52px" valign="top" style="text-align: center;">
+								<td width="20%" valign="top" style="text-align: center;">
 									<a href="#"><img src="http://i.imgur.com/95uUqJ5.png"></a>
 								</td>
 							</table>
