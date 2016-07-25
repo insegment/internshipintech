@@ -3,7 +3,21 @@
 /*USER MAIL*/
 
 $message ='
-	
+<style type="text/css">
+	@media screen and (max-width: 361px){
+		.column-1{
+			width: 100% !important;
+		}
+
+		.column-2{
+			display: none !important;
+		}
+		.column-2-mobile{
+			display: table !important;
+			width: 100% !important;
+		}
+	}
+</style>	
 <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
 		<tr>
 			<td style="background:#374043;padding: 40px 30px 40px 30px;">
@@ -26,12 +40,17 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr width="100%">
-									<td width="50%" valign="top" style="text-align: center;">
-										<p style="padding: 15px 0">First Name</p>									
+								<tr>
+									<td class="column-1" width="50%" valign="top" style="text-align: center;">
+										<p>First Name</p>									
 									</td>
-									<td width="50%" valign="top" style="text-align: center;">
-										<p style="padding: 15px 0">' . $_POST['fname'] . '</p>
+									<td class="column-2" width="50%" valign="top" style="text-align: center;">
+										<p>' . $_POST['fname'] . '</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="column-2" width="50%" valign="top" style="text-align: center;display:none;">
+										<p>' . $_POST['fname'] . '</p>
 									</td>
 								</tr>
 							</table>
