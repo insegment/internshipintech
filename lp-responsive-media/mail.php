@@ -26,11 +26,11 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
-									<td width="260px" valign="top" style="text-align: center;">
+								<tr width="100%">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">First Name</p>									
 									</td>
-									<td width="260px" valign="top" style="text-align: center;">
+									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">' . $_POST['fname'] . '</p>
 									</td>
 								</tr>
@@ -40,7 +40,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Last Name</p>									
 									</td>
@@ -54,7 +54,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Company</p>									
 									</td>
@@ -68,7 +68,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Email</p>									
 									</td>
@@ -82,7 +82,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Country</p>									
 									</td>
@@ -96,7 +96,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Phone Number</p>									
 									</td>
@@ -110,7 +110,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Job Title</p>									
 									</td>
@@ -124,7 +124,7 @@ $message ='
 					<tr>
 						<td>
 							<table border="1" cellpadding="0" cellspacing="0" width="100%">
-								<tr>
+								<tr width="100%">
 									<td width="50%" valign="top" style="text-align: center;">
 										<p style="padding: 15px 0">Industry</p>									
 									</td>
@@ -141,7 +141,7 @@ $message ='
 		<tr>
 			<td style="background:#374043;padding: 40px 30px 40px 30px;">
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
-					<tr>
+					<tr width="100%">
 						<td width="50%" valign="top">
 							<span style="color:#ffffff">&copy; Copyright 2016 Arbor Networks, Inc. All rights reserved.</span>									
 						</td>
