@@ -1597,6 +1597,7 @@ FOOTER
 MEDIA QUERIES
 *************
 */
+
 @media (max-width: 992px){
     .parallax-top{
         height: auto;
@@ -1605,8 +1606,8 @@ MEDIA QUERIES
         position: relative!important;
         top: 0;
         right: 0;
-        width: 70%!important;
-        margin: 0 15%;
+        margin: 0 5%;
+        width: 90%!important;
         margin-bottom: 120px;
     }
 }
