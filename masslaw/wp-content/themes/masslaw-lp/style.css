@@ -1134,6 +1134,7 @@ OPEN HOUSE
         white-space:pre-wrap;
     }
     .form-textbox,.form-textarea,.form-dropdown,.form-list{
+        -webkit-appearance: none;
         border:1px solid #555;
         padding:4px;
         -webkit-border-radius:5px 5px;
@@ -1454,6 +1455,7 @@ REQUEST INFO FORM
     text-indent: 6px;
     color: #b0a9a9;
     font-size: 14px;
+    line-height: 1!important;
     -webkit-appearance: none;
     box-sizing: border-box;
     vertical-align: middle;
