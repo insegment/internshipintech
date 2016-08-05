@@ -1611,6 +1611,9 @@ MEDIA QUERIES
         width: 90%!important;
         margin-bottom: 120px;
     }
+    .sign-up-button a{
+        width: 50%!important;
+    }
 }
 @media screen and (min-width: 1600px) {
     .form {
