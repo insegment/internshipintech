@@ -4,9 +4,23 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
-	<!-- Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>
+<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3J7F3"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,9 +29,7 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-T3J7F3');</script>
 	<!-- End Google Tag Manager -->
-	<?php wp_head(); ?>
-</head>
-<body>
+
 	<header class="header-section">
 		<div class="container header-container">
 			<div class="row header-row">
