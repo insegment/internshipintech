@@ -1505,7 +1505,7 @@ SIGN UP SECTION
     font-weight: bold!important;
     font-size: 16px!important;
     padding: 0px 20px!important;
-    height: 28px!important;
+    /*height: 28px!important;*/
     margin: 20px auto!important;
 }
 .sign-up-button a:hover{
@@ -1563,6 +1563,7 @@ FOOTER
     margin-right: 28px;
 }
 .social-logo{
+    font-size:1.8em!important;
     color: #777777;
 }
 .twitter-logo:hover{
@@ -1598,10 +1599,40 @@ FOOTER
 MEDIA QUERIES
 *************
 */
+@media(max-width: 390px){
+    .form-input{
+        width: 100%;
+    }
+    .form-address-table{
+        width: 100%;
+    }
+    .form-address-table tbody{
+        width: 100%;
+    }
+    .form-all{
+        width: 100%!important;
+    }
+    #input_1, #input_3, #input_4, #input_5, #input_12, #input_14, #input_16, #input_17{
+        width: 220px!important;
+    }
+    #input_8_postal, #input_8_city, #input_8_state, #input_8_country{
+        width: 100px!important;
+    }
+    #input_10_area, #input_10_phone, #input_13_area, #input_13_phone{
+        width: 100px!important;
+    }
+    #input_8_addr_line1, #input_8_addr_line2{
+        width: 220px!important;
+    }   
+}
 
 @media (max-width: 992px){
     .parallax-top{
+        background: transparent url(img/back3.png) no-repeat center -100px fixed;
         height: auto;
+    }
+    .parallax-bottom{
+        background:transparent url('img/back4.png') no-repeat center top fixed;
     }
     .form{
         position: relative!important;
@@ -1611,9 +1642,9 @@ MEDIA QUERIES
         width: 90%!important;
         margin-bottom: 120px;
     }
-    .sign-up-button a{
+    /*.sign-up-button a{
         width: 50%!important;
-    }
+    }*/
 }
 @media screen and (min-width: 1600px) {
     .form {
