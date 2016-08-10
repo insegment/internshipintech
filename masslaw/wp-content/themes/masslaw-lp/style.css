@@ -1632,7 +1632,7 @@ MEDIA QUERIES
         height: auto;
     }
     .parallax-bottom{
-        background:transparent url('img/back4.png') no-repeat center top fixed;
+        background:transparent url('img/back4.png') no-repeat center center fixed;
     }
     .form{
         position: relative!important;
