@@ -1410,6 +1410,17 @@ HEADER
 PARALLAX SECTION TOP
 ***********************
 */
+.parallax-headers{
+    margin-top: 100px;
+    margin-right: 434px;
+}
+.parallax-headers h1{
+    font-size: 25px;
+}
+.parallax-headers h2{
+    font-size: 30px;
+    font-weight: bold;
+}
 .parallax-top{
     background:transparent url('img/back3.png') no-repeat center center fixed;
     background-size: cover;
@@ -1642,9 +1653,6 @@ MEDIA QUERIES
         width: 90%!important;
         margin-bottom: 120px;
     }
-    /*.sign-up-button a{
-        width: 50%!important;
-    }*/
 }
 @media screen and (min-width: 1600px) {
     .form {

@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>
-<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3J7F3"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -29,6 +29,7 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-T3J7F3');</script>
 	<!-- End Google Tag Manager -->
+	
 
 	<header class="header-section">
 		<div class="container header-container">
