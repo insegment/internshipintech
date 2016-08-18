@@ -1656,6 +1656,7 @@ MEDIA QUERIES
     }
     .parallax-bottom{
         background:transparent url('img/back4.png') no-repeat;
+        background-size: cover;
     }
 }
 @media screen and (min-width: 1600px) {
