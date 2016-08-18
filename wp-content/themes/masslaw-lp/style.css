@@ -1638,13 +1638,6 @@ MEDIA QUERIES
 }
 
 @media (max-width: 992px){
-    .parallax-top{
-        background: transparent url(img/back3.png) no-repeat;
-        height: auto;
-    }
-    .parallax-bottom{
-        background:transparent url('img/back4.png') no-repeat;
-    }
     .form{
         position: relative!important;
         top: 0;
@@ -1652,6 +1645,15 @@ MEDIA QUERIES
         margin: 0 5%;
         width: 90%!important;
         margin-bottom: 120px;
+    }
+}
+@media (max-width: 1025px){
+    .parallax-top{
+        background: transparent url(img/back3.png) no-repeat;
+        height: auto;
+    }
+    .parallax-bottom{
+        background:transparent url('img/back4.png') no-repeat;
     }
 }
 @media screen and (min-width: 1600px) {
