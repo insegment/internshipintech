@@ -1642,9 +1642,6 @@ MEDIA QUERIES
         background: transparent url(img/back3.png) no-repeat center -100px fixed;
         height: auto;
     }
-    .parallax-bottom{
-        background:transparent url('img/back4.png') no-repeat center center fixed;
-    }
     .form{
         position: relative!important;
         top: 0;
