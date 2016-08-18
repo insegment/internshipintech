@@ -1639,8 +1639,11 @@ MEDIA QUERIES
 
 @media (max-width: 992px){
     .parallax-top{
-        background: transparent url(img/back3.png) no-repeat center -100px fixed;
+        background: transparent url(img/back3.png) no-repeat;
         height: auto;
+    }
+    .parallax-bottom{
+        background:transparent url('img/back4.png') no-repeat;
     }
     .form{
         position: relative!important;
