@@ -35,12 +35,18 @@ add_action( 'wp_enqueue_scripts', 'masslaw_scripts' );
 
 
 require_once( 'custom-vc/vc-integration.php');
+
+include_once('inc/advanced-custom-fields/acf.php');
+
 require_once( 'inc/acf-wp-wysiwyg/acf-wp_wysiwyg.php' );
 require_once( 'inc/acf-gallery/acf-gallery.php' );
 require_once( 'inc/acf-flexible-content/acf-flexible-content.php' );
 require_once( 'inc/acf-options-page/acf-options-page.php' );
 require_once( 'inc/acf-repeater/acf-repeater.php' );
 require_once( 'inc/acf-taxonomy-field/taxonomy-field.php' );
+
+
+require_once( 'inc/acf-fields.php' );
 
 
 function malaw_acf_options_page_settings( $settings )
@@ -59,17 +65,40 @@ add_filter('acf/options_page/settings', 'malaw_acf_options_page_settings');
 add_action( 'wpcf7_init', 'malaw_schedule_add_shortcode' );
  
 function malaw_schedule_add_shortcode() {
-    wpcf7_add_shortcode( 'mslaw_schedule', 'mslaw_schedule_shortcode_handler' ); // "clock" is the type of the form-tag
+    wpcf7_add_shortcode( 'mslaw_schedule', 'mslaw_schedule_shortcode_handler' ); 
 }
  
+add_filter( 'wpcf7_special_mail_tags', 'custom_mail_tag', 10, 3 );
+
+function custom_mail_tag( $output, $name, $html ) {
+  $name = preg_replace( '/^wpcf7\./', '_', $name ); // for back-compat
+
+  $submission = WPCF7_Submission::get_instance();
+
+  if ( ! $submission ) {
+    return $output;
+  }
+
+  if ('_mslaw_schedule' == $name) {
+
+  }
+
+  return $output;
+}
+
+
 function mslaw_schedule_shortcode_handler( $tag ) {
+    
+
+
+
     $output = "";
-    $output .= "<ul>";
+    $output .= "<select>";
 
     for ($i=0; $i < 6; $i++) { 
-      $output .= "<li>test ".$i . "</li>"; 
+      $output .= "<option value='".$i."'>test ".$i . "</option>"; 
     }
-    $output .= "</ul>";
+    $output .= "</select>";
 
     return $output;
 }
@@ -195,4 +224,84 @@ function masslaw_sendphp( ){
 //    mail('mslaw@mslaw.edu', 'MASS LP - Difference Lead', $mailBody, $headers_different);
   }
   die();
+}
+
+
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_schedule',
+    'title' => 'Schedule',
+    'fields' => array (
+      array (
+        'key' => 'field_57b717a94c478',
+        'label' => 'Schedule list',
+        'name' => 'mslaw_schedule_list',
+        'type' => 'repeater',
+        'sub_fields' => array (
+          array (
+            'key' => 'field_57b717b24c479',
+            'label' => 'Semester',
+            'name' => 'mslaw_schedule_list_semester',
+            'type' => 'text',
+            'column_width' => '',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'none',
+            'maxlength' => '',
+          ),
+          array (
+            'key' => 'field_57b718034c47a',
+            'label' => 'Schedule Dates List',
+            'name' => 'mslaw_schedule_dates_list',
+            'type' => 'repeater',
+            'column_width' => '',
+            'sub_fields' => array (
+              array (
+                'key' => 'field_57b718684c47b',
+                'label' => 'Schedule Date',
+                'name' => 'mslaw_schedule_date',
+                'type' => 'text',
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+              ),
+            ),
+            'row_min' => '',
+            'row_limit' => '',
+            'layout' => 'table',
+            'button_label' => 'Add New Date',
+          ),
+        ),
+        'row_min' => '',
+        'row_limit' => '',
+        'layout' => 'table',
+        'button_label' => 'Add New Semester',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'options_page',
+          'operator' => '==',
+          'value' => 'acf-options-general',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
 }
