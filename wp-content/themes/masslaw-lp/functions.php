@@ -35,6 +35,32 @@ add_action( 'wp_enqueue_scripts', 'masslaw_scripts' );
 
 
 require_once( 'custom-vc/vc-integration.php');
+require_once( 'inc/acf-wp-wysiwyg/acf-wp_wysiwyg.php' );
+require_once( 'inc/acf-gallery/acf-gallery.php' );
+require_once( 'inc/acf-flexible-content/acf-flexible-content.php' );
+require_once( 'inc/acf-options-page/acf-options-page.php' );
+require_once( 'inc/acf-repeater/acf-repeater.php' );
+require_once( 'inc/acf-taxonomy-field/taxonomy-field.php' );
+
+
+add_action( 'wpcf7_init', 'malaw_schedule_add_shortcode' );
+ 
+function malaw_schedule_add_shortcode() {
+    wpcf7_add_shortcode( 'mslaw_schedule', 'mslaw_schedule_shortcode_handler' ); // "clock" is the type of the form-tag
+}
+ 
+function mslaw_schedule_shortcode_handler( $tag ) {
+    $output = "";
+    $output .= "<ul>";
+
+    for ($i=0; $i < 6; $i++) { 
+      $output .= "<li>test ".$i . "</li>"; 
+    }
+    $output .= "</ul>";
+
+    return $output;
+}
+
 
 
   function httpPost($url,$params) {
