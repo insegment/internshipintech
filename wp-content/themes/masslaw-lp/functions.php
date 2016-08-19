@@ -43,6 +43,19 @@ require_once( 'inc/acf-repeater/acf-repeater.php' );
 require_once( 'inc/acf-taxonomy-field/taxonomy-field.php' );
 
 
+function malaw_acf_options_page_settings( $settings )
+{
+  $settings['title'] = 'Site Settings';
+  //$settings['pages'] = array('General', 'Scripts', 'Archives', 'Careers', 'Locations', 'Forms');
+  $settings['pages'] = array('General');
+
+  return $settings;
+}
+
+add_filter('acf/options_page/settings', 'malaw_acf_options_page_settings');
+
+
+
 add_action( 'wpcf7_init', 'malaw_schedule_add_shortcode' );
  
 function malaw_schedule_add_shortcode() {
