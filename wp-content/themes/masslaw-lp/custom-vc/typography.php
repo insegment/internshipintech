@@ -128,3 +128,24 @@ vc_map(array(
         $add_device_visibility
     )
 ));
+
+
+
+
+vc_map(array(
+    "name" => __("Fancy Schedule", 'rentexwp') ,
+    "base" => "mk_fancy_schedule",
+    'icon' => 'icon-mk-fancy-title vc_mk_element-icon',
+    "category" => __('Typography', 'rentexwp') ,
+    'description' => __('Display fancy schedule list.', 'rentexwp') ,
+    "params" => array(
+        array(
+            "type" => "textfield",
+            "heading" => __("Extra class name", 'rentexwp') ,
+            "param_name" => "el_class",
+            "value" => "",
+            "description" => __("If you wish to style particular content element differently, then use this field to add a class name and then refer to it in Custom CSS Shortcode or Masterkey Custom CSS option.", 'rentexwp')
+        ),
+        $add_device_visibility
+    )
+));
