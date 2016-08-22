@@ -1622,6 +1622,11 @@ FOOTER
 MEDIA QUERIES
 *************
 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .parallax-top{
+        background-size: cover!important;
+    }
+}
 @media(max-width: 390px){
     .form-input{
         width: 100%;
@@ -1680,5 +1685,8 @@ MEDIA QUERIES
     .form {
         width: 25% !important;
         right: 240px;
+    }
+    .parallax-top{
+        background:transparent url('img/back3.png') no-repeat center -90px fixed;
     }
 }

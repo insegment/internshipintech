@@ -171,7 +171,7 @@ function masslaw_sendphp( ){
       "q32_clickTo" => $_POST['q32_clickTo'],
   );
 
- // echo httpPost("http://submit.jotformpro.com/submit/43066178792969/", $params);
+  echo httpPost("http://submit.jotformpro.com/submit/43066178792969/", $params);
 
   // set mail headers
   $headers = 'From: <no-reply@mslaw.com>' . "\r\n";
