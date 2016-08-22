@@ -13,7 +13,7 @@
 			</ul>
 		</div>
 		<div class="copyright">
-			<h6>&copy Copyright 2016 Massachusetts School of Law. All Rights Reserved. <a class="privacy-policy-diclaimer" href="http://mslaw.edu/privacy-policy-disclaimer/" target="_blank"><span class="underline-animation">Privacy Policy &amp Disclaimer</span></a></br>Massachusetts School of Law 500 Federal Street Andover, MA 978 681 0800</h6>
+			<h6>&copy; Copyright <?php echo date("Y") ?> Massachusetts School of Law. All Rights Reserved. <a class="privacy-policy-diclaimer" href="http://mslaw.edu/privacy-policy-disclaimer/" target="_blank"><span class="underline-animation">Privacy Policy &amp Disclaimer</span></a></br>Massachusetts School of Law 500 Federal Street Andover, MA 978 681 0800</h6>
 		</div>
 		<div class="insegment">
 			Created by <a href="http://insegment.com/" target="_blank" class="insegment-footer"><img class="insegment-logo" src="<?php echo get_template_directory_uri();?>/img/insegment.png"></a>

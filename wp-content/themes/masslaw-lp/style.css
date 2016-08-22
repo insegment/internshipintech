@@ -12,7 +12,7 @@ GLOBAL VALUES
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif!important;
+    font-family: Times,'Open Sans', sans-serif;
     font-size: 16px;
 }
 .container{
@@ -1436,6 +1436,7 @@ REQUEST INFO FORM
 *****************
 */
 .form{
+    font-family: 'Open Sans', sans-serif;
     border: 15px solid rgba(110,106,113,0.80);
     background: #fff;
     position: absolute!important;
@@ -1464,12 +1465,15 @@ REQUEST INFO FORM
     outline: none;
     border-radius: 5px;
     text-indent: 6px;
-    color: #b0a9a9;
+    color: #a0a0a0;
     font-size: 14px;
     line-height: 2!important;
     -webkit-appearance: none;
     box-sizing: border-box;
     vertical-align: middle;
+}
+#form-semester {
+    margin-bottom: 0;
 }
 #form-first-name, #form-last-name, #form-email, #form-address, #form-phone, #form-semester{
     width: 100%;
@@ -1513,6 +1517,7 @@ SIGN UP SECTION
 ***************
 */
 .sign-up-button a{
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold!important;
     font-size: 16px!important;
     padding: 0px 20px!important;
@@ -1542,6 +1547,7 @@ PARALLAX SECTION BOTTOM
 ***********************
 */
 .parallax-bottom{
+    font-family: 'Open Sans', sans-serif;
     background:transparent url('img/back4.png') no-repeat center center fixed;
     background-size: cover;
 }
@@ -1657,6 +1663,11 @@ MEDIA QUERIES
     .parallax-bottom{
         background:transparent url('img/back4.png') no-repeat;
         background-size: cover;
+    }
+}
+@media (max-width: 1367px){
+    .form{
+        top: 62px;
     }
 }
 @media screen and (min-width: 1600px) {
