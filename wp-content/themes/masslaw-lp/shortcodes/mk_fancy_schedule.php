@@ -11,12 +11,12 @@ $output .= '<div class="'.$el_class.' '.$visibility.' ">';
 		while(has_sub_field('mslaw_schedule_list', 'option')):
 			$output .= '<div class="semester">';
 				$semester = get_sub_field('mslaw_schedule_list_semester');
-				$output .= '<h2 >'. $semester .'</h2>';
+				$output .= '<h2 class="text-center">'. $semester .'</h2>';
 				if( get_sub_field('mslaw_schedule_dates_list') ):
 					$output .= '<div class="schedule_list">';
 					while ( has_sub_field('mslaw_schedule_dates_list') ) {
 						$attendance = get_sub_field('mslaw_schedule_date');
-						$output .= '<p >' . $attendance . '</p>';
+						$output .= '<p class="text-center">' . $attendance . '</p>';
 					}
 					$output .= '</div>';
 				endif;
