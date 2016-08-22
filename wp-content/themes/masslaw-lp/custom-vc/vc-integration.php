@@ -67,3 +67,7 @@ function rentexwp_toggle_param_field($settings, $value){
 class WPBakeryShortCode_mk_fancy_title extends WPBakeryShortCode
 {
 }
+
+class WPBakeryShortCode_mk_fancy_schedule extends WPBakeryShortCode
+{
+}
