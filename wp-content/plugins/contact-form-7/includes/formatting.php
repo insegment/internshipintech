@@ -9,7 +9,7 @@ function wpcf7_autop( $pee, $br = 1 ) {
 	$pee = preg_replace( '|<br />\s*<br />|', "\n\n", $pee );
 	// Space things out a little
 	/* wpcf7: remove select and input */
-	$allblocks = '(?:html|head|body|table|thead|tfoot|caption|col|colgroup|tbody|tr|td|th|div|dl|dd|dt|ul|ol|li|pre|form|map|area|blockquote|address|math|style|p|h[1-6]|hr|fieldset|legend|section|article|aside|hgroup|header|footer|nav|figure|figcaption|details|menu|summary)';
+	$allblocks = '(?:table|thead|tfoot|caption|col|colgroup|tbody|tr|td|th|div|dl|dd|dt|ul|ol|li|pre|form|map|area|blockquote|address|math|style|p|h[1-6]|hr|fieldset|legend|section|article|aside|hgroup|header|footer|nav|figure|figcaption|details|menu|summary)';
 	$pee = preg_replace( '!(<' . $allblocks . '[^>]*>)!', "\n$1", $pee );
 	$pee = preg_replace( '!(</' . $allblocks . '>)!', "$1\n\n", $pee );
 
@@ -177,7 +177,7 @@ function wpcf7_is_url( $url ) {
 }
 
 function wpcf7_is_tel( $tel ) {
-	$result = preg_match( '/^[+]?[0-9() -]*$/', $tel );
+	$result = preg_match( '%^[+]?[0-9()/ -]*$%', $tel );
 	return apply_filters( 'wpcf7_is_tel', $result, $tel );
 }
 

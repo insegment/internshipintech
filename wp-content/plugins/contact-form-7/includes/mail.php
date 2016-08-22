@@ -48,7 +48,7 @@ class WPCF7_Mail {
 
 		if ( $use_html ) {
 			$body = $this->replace_tags( $template['body'], true );
-			$body = wpcf7_autop( $body );
+			$body = wpautop( $body );
 		} else {
 			$body = $this->replace_tags( $template['body'] );
 		}
