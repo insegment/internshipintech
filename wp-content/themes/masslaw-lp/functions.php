@@ -33,6 +33,7 @@ function masslaw_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'masslaw_scripts' );
 
+define( 'ACF_LITE', true );
 
 require_once( 'custom-vc/vc-integration.php');
 
