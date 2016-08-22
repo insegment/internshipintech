@@ -80,7 +80,7 @@ function custom_mail_tag( $output, $name, $html ) {
   }
 
   if ('_mslaw_schedule' == $name) {
-
+    $output = $submission->get_posted_data('mslaw_schedule');
   }
 
   return $output;
@@ -88,17 +88,20 @@ function custom_mail_tag( $output, $name, $html ) {
 
 
 function mslaw_schedule_shortcode_handler( $tag ) {
-    
-
-
 
     $output = "";
-    $output .= "<select>";
+    $output .= '<span class="wpcf7-form-control-wrap mslaw_schedule"><select  name="mslaw_schedule" class="wpcf7-form-control wpcf7-select form-item">';
+  
+    $output .= '<option selected value=" ">Anticipated Semester of Enrollment (Optional)</option>';
 
-    for ($i=0; $i < 6; $i++) { 
-      $output .= "<option value='".$i."'>test ".$i . "</option>"; 
-    }
-    $output .= "</select>";
+    if(get_field('mslaw_schedule_list', 'option')):
+      while(has_sub_field('mslaw_schedule_list', 'option')):
+        $semester = get_sub_field('mslaw_schedule_list_semester');
+        $output .= '<option value="' . $semester . '">'. $semester .'</option>';
+      endwhile;
+    endif;
+
+    $output .= "</select></span>";
 
     return $output;
 }
