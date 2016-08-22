@@ -12,7 +12,7 @@ GLOBAL VALUES
 body{
     margin: 0;
     padding: 0;
-    font-family: Times,'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 .container{
@@ -1424,7 +1424,7 @@ PARALLAX SECTION TOP
 .parallax-top{
     background:transparent url('img/back3.png') no-repeat center center fixed;
     background-size: cover;
-    height: 550px;
+    height: 490px;
 }
 .parallax-accredited{
     margin-top:20px;
@@ -1436,7 +1436,6 @@ REQUEST INFO FORM
 *****************
 */
 .form{
-    font-family: 'Open Sans', sans-serif;
     border: 15px solid rgba(110,106,113,0.80);
     background: #fff;
     position: absolute!important;
@@ -1517,7 +1516,6 @@ SIGN UP SECTION
 ***************
 */
 .sign-up-button a{
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold!important;
     font-size: 16px!important;
     padding: 0px 20px!important;
@@ -1529,6 +1527,15 @@ SIGN UP SECTION
 }
 .sign-up-date{
     margin-bottom: 15px!important;
+}
+.semester h2{
+	font: italic 31px Times,'Open Sans',sans-serif;
+}
+.schedule_list{
+	margin-top: 24px;
+}
+.schedule_list p{
+	margin: 0;
 }
 /*
 *******************
@@ -1547,7 +1554,6 @@ PARALLAX SECTION BOTTOM
 ***********************
 */
 .parallax-bottom{
-    font-family: 'Open Sans', sans-serif;
     background:transparent url('img/back4.png') no-repeat center center fixed;
     background-size: cover;
 }
