@@ -65,7 +65,7 @@ add_filter('acf/options_page/settings', 'malaw_acf_options_page_settings');
 add_action( 'wpcf7_init', 'malaw_schedule_add_shortcode' );
  
 function malaw_schedule_add_shortcode() {
-    wpcf7_add_shortcode( 'mslaw_schedule', 'mslaw_schedule_shortcode_handler' ); 
+    wpcf7_add_shortcode( 'mslaw_schedule', 'mslaw_schedule_shortcode_handler' , true); 
 }
  
 add_filter( 'wpcf7_special_mail_tags', 'custom_mail_tag', 10, 3 );
@@ -88,22 +88,24 @@ function custom_mail_tag( $output, $name, $html ) {
 
 
 function mslaw_schedule_shortcode_handler( $tag ) {
+	$tag = new WPCF7_Shortcode( $tag );
+	$first['value'] = $tag->values;
+	$first['label'] = $tag->labels;
 
-    $output = "";
-    $output .= '<span class="wpcf7-form-control-wrap mslaw_schedule"><select  name="mslaw_schedule" class="wpcf7-form-control wpcf7-select form-item">';
-  
-    $output .= '<option selected value=" ">Anticipated Semester of Enrollment (Optional)</option>';
-
-    if(get_field('mslaw_schedule_list', 'option')):
-      while(has_sub_field('mslaw_schedule_list', 'option')):
-        $semester = get_sub_field('mslaw_schedule_list_semester');
-        $output .= '<option value="' . $semester . '">'. $semester .'</option>';
-      endwhile;
-    endif;
-
-    $output .= "</select></span>";
-
-    return $output;
+	$tagName = $tag->name;
+	$output = "";
+	if(get_field('mslaw_schedule_list', 'option')):
+		$output .= '<span class="wpcf7-form-control-wrap mslaw_schedule"><select  name="mslaw_schedule" class="wpcf7-form-control wpcf7-select form-item">';
+		if( isset( $first ) && !empty( $first ) ){
+			$output .= '<option selected value="' . htmlentities( $first['value'][0] ) . '">' . $first['label'][0] . '</option>';
+		}
+		while(has_sub_field('mslaw_schedule_list', 'option')):
+			$semester = get_sub_field('mslaw_schedule_list_semester');
+			$output .= '<option value="' . $semester . '">'. $semester .'</option>';
+		endwhile;
+		$output .= "</select></span>";
+	endif;
+	return $output;
 }
 
 
