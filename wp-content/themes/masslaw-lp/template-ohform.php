@@ -10,6 +10,19 @@ function masslaw_scripts_oh() {
 	wp_localize_script( 'masslow_scripts_oh', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'site_url' => site_url() ));        
 }
 add_action( 'wp_enqueue_scripts', 'masslaw_scripts_oh' );
+$semesterList = $attendanceDates = '';
+if(get_field('mslaw_schedule_list', 'option')):
+	while(has_sub_field('mslaw_schedule_list', 'option')):
+		$semester = get_sub_field('mslaw_schedule_list_semester');
+		$semesterList .= '<option value="' . htmlentities( $semester ) . '">'. $semester .'</option>';
+		if( get_sub_field('mslaw_schedule_dates_list') ):
+			while ( has_sub_field('mslaw_schedule_dates_list') ) {
+				$attendance = get_sub_field('mslaw_schedule_date');
+				$attendanceDates .= '<option value="' . htmlentities( $attendance ) . '">' . $attendance . '</option>';
+			}
+		endif;
+	endwhile;
+endif;
 
 
  get_header(); ?>
@@ -430,8 +443,7 @@ add_action( 'wp_enqueue_scripts', 'masslaw_scripts_oh' );
 							        <div id="cid_12" class="form-input">
 							          <select class="form-dropdown" style="width:150px" id="input_12" name="q12_semesterOf">
 							            <option value="">  </option>
-							            <!-- <option value="Spring 2016"> Spring 2016 </option> -->
-							            <option value="Fall 2016"> Fall 2016 </option>
+							            <?php echo $semesterList;?>
 							          </select>
 							        </div>
 							      </li>
@@ -445,7 +457,7 @@ add_action( 'wp_enqueue_scripts', 'masslaw_scripts_oh' );
 							        <div id="cid_14" class="form-input">
 							          <select class="form-dropdown validate[required]" style="width:150px" id="input_14" name="q14_openHouse">
 							            <option value="">  </option>
-							            <option value="September 13, 2016 - TUESDAY 7:00 PM">September 13, 2016 - TUESDAY 7:00 PM</option>
+							            <?php echo $attendanceDates; ?>
 							          </select>
 							        </div>
 							      </li>
