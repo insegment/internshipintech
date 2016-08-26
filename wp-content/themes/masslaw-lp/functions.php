@@ -305,6 +305,86 @@ if(function_exists("register_field_group"))
     ),
     'options' => array (
       'position' => 'normal',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+
+
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_time-outline',
+    'title' => 'Time Outline',
+    'fields' => array (
+      array (
+        'key' => 'field_57c026976dd38',
+        'label' => 'Schedule Time Outline',
+        'name' => 'mslaw_schedule_time_outline',
+        'type' => 'repeater',
+        'sub_fields' => array (
+          array (
+            'key' => 'field_57c027086dd39',
+            'label' => 'Section Title',
+            'name' => 'mslaw_section_title',
+            'type' => 'text',
+            'column_width' => '',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'none',
+            'maxlength' => '',
+          ),
+          array (
+            'key' => 'field_57c027476dd3a',
+            'label' => 'Outline Dates',
+            'name' => 'mslaw_section_outline_dates',
+            'type' => 'repeater',
+            'column_width' => '',
+            'sub_fields' => array (
+              array (
+                'key' => 'field_57c027736dd3b',
+                'label' => 'Outline Date',
+                'name' => 'mslaw_outline_date',
+                'type' => 'text',
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+              ),
+            ),
+            'row_min' => '',
+            'row_limit' => '',
+            'layout' => 'table',
+            'button_label' => 'Add Outline Date',
+          ),
+        ),
+        'row_min' => '',
+        'row_limit' => '',
+        'layout' => 'table',
+        'button_label' => 'Add Section',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'options_page',
+          'operator' => '==',
+          'value' => 'acf-options-general',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
       'layout' => 'no_box',
       'hide_on_screen' => array (
       ),
