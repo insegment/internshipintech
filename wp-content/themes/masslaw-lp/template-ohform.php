@@ -11,16 +11,16 @@ function masslaw_scripts_oh() {
 }
 add_action( 'wp_enqueue_scripts', 'masslaw_scripts_oh' );
 $semesterList = $attendanceDates = '';
-if(get_field('mslaw_schedule_list', 'option')):
-	while(has_sub_field('mslaw_schedule_list', 'option')):
-		$semester = get_sub_field('mslaw_schedule_list_semester');
+if(get_field('acfmslaw_semester_list', 'option')):
+	while(has_sub_field('acfmslaw_semester_list', 'option')):
+		$semester = get_sub_field('acfmslaw_semester_period');
 		$semesterList .= '<option value="' . htmlentities( $semester ) . '">'. $semester .'</option>';
-		if( get_sub_field('mslaw_schedule_dates_list') ):
-			while ( has_sub_field('mslaw_schedule_dates_list') ) {
-				$attendance = get_sub_field('mslaw_schedule_date');
-				$attendanceDates .= '<option value="' . htmlentities( $attendance ) . '">' . $attendance . '</option>';
-			}
-		endif;
+	endwhile;
+endif;
+if(get_field('acfmslaw_open_house_dates', 'option')):
+	while(has_sub_field('acfmslaw_open_house_dates', 'option')):
+		$oh = get_sub_field('acfmslaw_oh_date');
+		$attendanceDates .= '<option value="' . htmlentities( $oh ) . '">'. $oh .'</option>';
 	endwhile;
 endif;
 

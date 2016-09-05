@@ -33,7 +33,7 @@ function masslaw_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'masslaw_scripts' );
 
-define( 'ACF_LITE', true );
+//define( 'ACF_LITE', true );
 
 require_once( 'custom-vc/vc-integration.php');
 
@@ -96,13 +96,13 @@ function mslaw_schedule_shortcode_handler( $tag ) {
 	$id = $tag->get_id_option();
 	$tagName = $tag->name;
 	$output = "";
-	if(get_field('mslaw_schedule_list', 'option')):
+	if(get_field('acfmslaw_semester_list', 'option')):
 		$output .= '<span class="wpcf7-form-control-wrap '.$tagName.'"><select id="'.$id.'" name="'.$tagName.'" class="wpcf7-form-control wpcf7-select  '.$class.'">';
 		if( isset( $first ) && !empty( $first ) ){
 			$output .= '<option selected value="' . htmlentities( $first['value'][0] ) . '">' . $first['label'][0] . '</option>';
 		}
-		while(has_sub_field('mslaw_schedule_list', 'option')):
-			$semester = get_sub_field('mslaw_schedule_list_semester');
+		while(has_sub_field('acfmslaw_semester_list', 'option')):
+			$semester = get_sub_field('acfmslaw_semester_period');
 			$output .= '<option value="' . $semester . '">'. $semester .'</option>';
 		endwhile;
 		$output .= "</select></span>";
@@ -233,162 +233,3 @@ function masslaw_sendphp( ){
   die();
 }
 
-
-if(function_exists("register_field_group"))
-{
-  register_field_group(array (
-    'id' => 'acf_schedule',
-    'title' => 'Schedule',
-    'fields' => array (
-      array (
-        'key' => 'field_57b717a94c478',
-        'label' => 'Schedule list',
-        'name' => 'mslaw_schedule_list',
-        'type' => 'repeater',
-        'sub_fields' => array (
-          array (
-            'key' => 'field_57b717b24c479',
-            'label' => 'Semester',
-            'name' => 'mslaw_schedule_list_semester',
-            'type' => 'text',
-            'column_width' => '',
-            'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'formatting' => 'none',
-            'maxlength' => '',
-          ),
-          array (
-            'key' => 'field_57b718034c47a',
-            'label' => 'Schedule Dates List',
-            'name' => 'mslaw_schedule_dates_list',
-            'type' => 'repeater',
-            'column_width' => '',
-            'sub_fields' => array (
-              array (
-                'key' => 'field_57b718684c47b',
-                'label' => 'Schedule Date',
-                'name' => 'mslaw_schedule_date',
-                'type' => 'text',
-                'column_width' => '',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-              ),
-            ),
-            'row_min' => '',
-            'row_limit' => '',
-            'layout' => 'table',
-            'button_label' => 'Add New Date',
-          ),
-        ),
-        'row_min' => '',
-        'row_limit' => '',
-        'layout' => 'table',
-        'button_label' => 'Add New Semester',
-      ),
-    ),
-    'location' => array (
-      array (
-        array (
-          'param' => 'options_page',
-          'operator' => '==',
-          'value' => 'acf-options-general',
-          'order_no' => 0,
-          'group_no' => 0,
-        ),
-      ),
-    ),
-    'options' => array (
-      'position' => 'normal',
-      'layout' => 'default',
-      'hide_on_screen' => array (
-      ),
-    ),
-    'menu_order' => 0,
-  ));
-}
-
-
-if(function_exists("register_field_group"))
-{
-  register_field_group(array (
-    'id' => 'acf_time-outline',
-    'title' => 'Time Outline',
-    'fields' => array (
-      array (
-        'key' => 'field_57c026976dd38',
-        'label' => 'Schedule Time Outline',
-        'name' => 'mslaw_schedule_time_outline',
-        'type' => 'repeater',
-        'sub_fields' => array (
-          array (
-            'key' => 'field_57c027086dd39',
-            'label' => 'Section Title',
-            'name' => 'mslaw_section_title',
-            'type' => 'text',
-            'column_width' => '',
-            'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'formatting' => 'none',
-            'maxlength' => '',
-          ),
-          array (
-            'key' => 'field_57c027476dd3a',
-            'label' => 'Outline Dates',
-            'name' => 'mslaw_section_outline_dates',
-            'type' => 'repeater',
-            'column_width' => '',
-            'sub_fields' => array (
-              array (
-                'key' => 'field_57c027736dd3b',
-                'label' => 'Outline Date',
-                'name' => 'mslaw_outline_date',
-                'type' => 'text',
-                'column_width' => '',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-              ),
-            ),
-            'row_min' => '',
-            'row_limit' => '',
-            'layout' => 'table',
-            'button_label' => 'Add Outline Date',
-          ),
-        ),
-        'row_min' => '',
-        'row_limit' => '',
-        'layout' => 'table',
-        'button_label' => 'Add Section',
-      ),
-    ),
-    'location' => array (
-      array (
-        array (
-          'param' => 'options_page',
-          'operator' => '==',
-          'value' => 'acf-options-general',
-          'order_no' => 0,
-          'group_no' => 0,
-        ),
-      ),
-    ),
-    'options' => array (
-      'position' => 'normal',
-      'layout' => 'no_box',
-      'hide_on_screen' => array (
-      ),
-    ),
-    'menu_order' => 0,
-  ));
-}
